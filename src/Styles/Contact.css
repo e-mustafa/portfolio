@@ -1,0 +1,35 @@
+:root{
+   --mainPraimary: #018dff
+}
+
+.social-icons{
+   width: 45px;
+   height: 45px;
+   border-radius: 50%;
+   font-size: 25px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   transition: all .5s;
+   cursor: pointer;
+}
+
+.social-icons:hover{
+   background: var(--mainPraimary);
+   color: white !important;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
