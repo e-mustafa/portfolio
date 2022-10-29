@@ -41,10 +41,10 @@ function App() {
 
 
       <Routes>
-        <Route path='/mustafa-portfolio/' element={<Home/>} />
-        <Route path='/mustafa-portfolio/about' element={<About/>}  />
-        <Route path='/mustafa-portfolio/contact' element={<Contact/>} />
-        <Route path='/mustafa-portfolio/portfolio' element={<Portfolio/>} />
+        <Route path='/' element={<Home/>} />
+        <Route path='/about' element={<About/>}  />
+        <Route path='/contact' element={<Contact/>} />
+        <Route path='/portfolio' element={<Portfolio/>} />
       </Routes>
 
 

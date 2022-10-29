@@ -9,7 +9,7 @@ import simpleMoviesImg from '../Images/Projects/simple-movies.jpg'
 import simpleMoviesReduxImg from '../Images/Projects/simple-movies-redux.jpg'
 
 
-export const startLink = '/mustafa-portfolio'
+export const startLink = ''
 
 
 export const myPersonalInfo = [

@@ -33,7 +33,7 @@ export default function ProjectDetails({open, setOpen, EProjectDetails}) {
             <Typography variant="body1" color='text.secondary' > Language and Framework: </Typography>
 
             <Typography variant="h6" >
-               {EProjectDetails.Language && EProjectDetails.Language.join(', ')}
+               {EProjectDetails.Language && EProjectDetails.Language.length > 1 && EProjectDetails.Language.join(', ')}
             </Typography>
 
             <Link href={EProjectDetails.link} target='_blank'  >
