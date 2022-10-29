@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/mustafa-portfolio/static/css/main.830d85b1.css",
-    "main.js": "/mustafa-portfolio/static/js/main.ce821ac1.js",
-    "static/media/cara-shoping.png": "/mustafa-portfolio/static/media/cara-shoping.97580614387c91a848fb.png",
-    "static/media/template-w-carousel.png": "/mustafa-portfolio/static/media/template-w-carousel.763bc02555940c155134.png",
-    "static/media/my image 02.png": "/mustafa-portfolio/static/media/my image 02.a2bc76a79fc2cd5622ca.png",
-    "static/media/my image 01.png": "/mustafa-portfolio/static/media/my image 01.c64c506936c34fcdf62e.png",
-    "static/media/basic-calculator.png": "/mustafa-portfolio/static/media/basic-calculator.491c38aa5bd5808eeb41.png",
-    "static/media/simple-movies-redux.jpg": "/mustafa-portfolio/static/media/simple-movies-redux.4ae9d43bf43ea2f21cc8.jpg",
-    "static/media/watch-products.png": "/mustafa-portfolio/static/media/watch-products.01f44d1d0b1c741a6f0e.png",
-    "static/media/simple-movies.jpg": "/mustafa-portfolio/static/media/simple-movies.cb8c56e22c3361dd7329.jpg",
-    "static/media/currency-exchange.jpg": "/mustafa-portfolio/static/media/currency-exchange.050f0d7b6090dfb67462.jpg",
-    "static/media/react-lusion-app.jpg": "/mustafa-portfolio/static/media/react-lusion-app.42e02ae829455962a19d.jpg",
-    "index.html": "/mustafa-portfolio/index.html",
-    "main.830d85b1.css.map": "/mustafa-portfolio/static/css/main.830d85b1.css.map",
-    "main.ce821ac1.js.map": "/mustafa-portfolio/static/js/main.ce821ac1.js.map"
+    "main.css": "/portfolio/static/css/main.830d85b1.css",
+    "main.js": "/portfolio/static/js/main.1a3eee3c.js",
+    "static/media/cara-shoping.png": "/portfolio/static/media/cara-shoping.97580614387c91a848fb.png",
+    "static/media/template-w-carousel.png": "/portfolio/static/media/template-w-carousel.763bc02555940c155134.png",
+    "static/media/my image 02.png": "/portfolio/static/media/my image 02.a2bc76a79fc2cd5622ca.png",
+    "static/media/my image 01.png": "/portfolio/static/media/my image 01.c64c506936c34fcdf62e.png",
+    "static/media/basic-calculator.png": "/portfolio/static/media/basic-calculator.491c38aa5bd5808eeb41.png",
+    "static/media/simple-movies-redux.jpg": "/portfolio/static/media/simple-movies-redux.4ae9d43bf43ea2f21cc8.jpg",
+    "static/media/watch-products.png": "/portfolio/static/media/watch-products.01f44d1d0b1c741a6f0e.png",
+    "static/media/simple-movies.jpg": "/portfolio/static/media/simple-movies.cb8c56e22c3361dd7329.jpg",
+    "static/media/currency-exchange.jpg": "/portfolio/static/media/currency-exchange.050f0d7b6090dfb67462.jpg",
+    "static/media/react-lusion-app.jpg": "/portfolio/static/media/react-lusion-app.42e02ae829455962a19d.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.830d85b1.css.map": "/portfolio/static/css/main.830d85b1.css.map",
+    "main.1a3eee3c.js.map": "/portfolio/static/js/main.1a3eee3c.js.map"
   },
   "entrypoints": [
     "static/css/main.830d85b1.css",
-    "static/js/main.ce821ac1.js"
+    "static/js/main.1a3eee3c.js"
   ]
 }
