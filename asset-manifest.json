@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mustafa-portfolio/static/css/main.830d85b1.css",
-    "main.js": "/mustafa-portfolio/static/js/main.fc700b29.js",
+    "main.js": "/mustafa-portfolio/static/js/main.ce821ac1.js",
     "static/media/cara-shoping.png": "/mustafa-portfolio/static/media/cara-shoping.97580614387c91a848fb.png",
     "static/media/template-w-carousel.png": "/mustafa-portfolio/static/media/template-w-carousel.763bc02555940c155134.png",
     "static/media/my image 02.png": "/mustafa-portfolio/static/media/my image 02.a2bc76a79fc2cd5622ca.png",
@@ -14,10 +14,10 @@
     "static/media/react-lusion-app.jpg": "/mustafa-portfolio/static/media/react-lusion-app.42e02ae829455962a19d.jpg",
     "index.html": "/mustafa-portfolio/index.html",
     "main.830d85b1.css.map": "/mustafa-portfolio/static/css/main.830d85b1.css.map",
-    "main.fc700b29.js.map": "/mustafa-portfolio/static/js/main.fc700b29.js.map"
+    "main.ce821ac1.js.map": "/mustafa-portfolio/static/js/main.ce821ac1.js.map"
   },
   "entrypoints": [
     "static/css/main.830d85b1.css",
-    "static/js/main.fc700b29.js"
+    "static/js/main.ce821ac1.js"
   ]
 }
