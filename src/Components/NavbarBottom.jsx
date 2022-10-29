@@ -9,7 +9,6 @@ const NavbarBottom = () => {
    const navigate = useNavigate()
    const location = useLocation()
 
-   console.log(location.pathname);
    const [value, setValue] = useState( );
 
 
