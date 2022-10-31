@@ -87,7 +87,7 @@ const Contact = () => {
                 <Box className='social-icons' bgcolor='action.disabledBackground'  > <FaFacebookF /> </Box>
               </Link>
 
-              <Link href='https://www.linkedin.com/in/mustafa-ahmed-8247b45a' target='_blank' >
+              <Link href='https://www.linkedin.com/in/e-mustafa' target='_blank' >
                 <Box className='social-icons' bgcolor='action.disabledBackground'  > <FaLinkedinIn /> </Box>
               </Link>
 

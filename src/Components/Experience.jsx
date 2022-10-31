@@ -3,7 +3,6 @@ import { Grid, Typography } from '@mui/material'
 
 import {Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineDot, TimelineContent} from '@mui/lab';
 
-
 import {  FaRegHospital, FaToolbox, FaLaptopCode } from "react-icons/fa";
 import { GiOpenBook } from "react-icons/gi";
 import 'animate.css';
@@ -20,7 +19,7 @@ export default function Experience() {
       <Timeline position='right' color='text.white' sx={{px:0, overflow:'hidden'}}   >
         <Grid container >
 
-         <Grid item xs={12} lg={6} order={1} >
+         <Grid item xs={12} lg={6} >
 
             <TimelineItem sx={{'&::before': {content:'none'}}}>
                <TimelineSeparator>
@@ -33,14 +32,13 @@ export default function Experience() {
                      2022
                   </Typography>
 
-                  <Typography variant="h6" > Course </Typography>
-                  <Typography variant="h6" > Front-end Developer </Typography>
+                  <Typography variant="h6" > Pepo Teck </Typography>
+                  <Typography variant="h6" > Course Front-end Developer </Typography>
 
                </TimelineContent>
             </TimelineItem>
-         </Grid>
 
-         <Grid item xs={12} lg={6} order={{xs:2, lg:3}}  >
+
             <TimelineItem  sx={{'&::before': {content:'none'}}}>
                <TimelineSeparator>
                   <TimelineDot color="primary"> <FaToolbox /> </TimelineDot>
@@ -49,11 +47,31 @@ export default function Experience() {
 
                <TimelineContent sx={{ py: '12px', px: 2, }}>
                   <Typography variant="body1" component="span" bgcolor='divider' py={0.3} px={2} borderRadius='20px' >
-                     2014 - 2018
+                     Jul/2016    -    Sep/2018
                   </Typography>
                   <Typography variant="h6" >
-                         Employee
-                         </Typography>
+                     Smama Group, Jeddah
+                  </Typography>
+                  <Typography variant="h6" >
+                      Biomedical Engineer
+                      </Typography>
+               </TimelineContent>
+            </TimelineItem>
+
+
+            <TimelineItem  sx={{'&::before': {content:'none'}}}>
+               <TimelineSeparator>
+                  <TimelineDot color="primary"> <FaToolbox /> </TimelineDot>
+                  <TimelineConnector />
+               </TimelineSeparator>
+
+               <TimelineContent sx={{ py: '12px', px: 2, }}>
+                  <Typography variant="body1" component="span" bgcolor='divider' py={0.3} px={2} borderRadius='20px' >
+                     Feb/2014    -    Jul/2016
+                  </Typography>
+                  <Typography variant="h6" >
+                     Saad Ahmed Saad EST, Jeddah
+                  </Typography>
                   <Typography variant="h6" >
                       Biomedical Engineer
                       </Typography>
@@ -61,7 +79,7 @@ export default function Experience() {
             </TimelineItem>
          </Grid>
 
-         <Grid item xs={12} lg={6} order={{xs:3, lg:2}} >
+         <Grid item xs={12} lg={6} >
             <TimelineItem  sx={{'&::before': {content:'none'}}}>
                <TimelineSeparator>
                   <TimelineDot color="primary"> <FaRegHospital /> </TimelineDot>
@@ -70,19 +88,19 @@ export default function Experience() {
 
                <TimelineContent sx={{ py: '12px', px: 2, }}>
                   <Typography variant="body1" component="span" bgcolor='divider' py={0.3} px={2} borderRadius='20px' >
-                     2012 - 2013
+                     Mar/2013  -  Dec/2013
                   </Typography>
                   <Typography variant="h6" >
-                      Trainee & Volunteer
+                     International Medical Center, Jeddah
                       </Typography>
                   <Typography variant="h6" >
-                      Biomedical Engineer
+                     Biomedical Engineer Trainee and Volunteer
                       </Typography>
                </TimelineContent>
             </TimelineItem>
-         </Grid>
 
-         <Grid item xs={12} lg={6} order={4} >
+
+
             <TimelineItem  sx={{'&::before': {content:'none'}}}>
                <TimelineSeparator>
                   <TimelineDot color="primary"> <GiOpenBook /> </TimelineDot>
@@ -91,7 +109,7 @@ export default function Experience() {
 
                <TimelineContent sx={{ p:0, pt: '12px', pl: 2, }}>
                   <Typography variant="body1" component="span" bgcolor='divider' py={0.3} px={2} borderRadius='20px' >
-                     2012
+                     2007 - 2012
                   </Typography>
                   <Typography variant="h6" >
                      Bachelor Degree
