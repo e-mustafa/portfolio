@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.830d85b1.css",
-    "main.js": "/portfolio/static/js/main.8643a02b.js",
+    "main.js": "/portfolio/static/js/main.e54619a5.js",
     "static/media/cara-shoping.png": "/portfolio/static/media/cara-shoping.97580614387c91a848fb.png",
     "static/media/template-w-carousel.png": "/portfolio/static/media/template-w-carousel.763bc02555940c155134.png",
     "static/media/my image 02.png": "/portfolio/static/media/my image 02.a2bc76a79fc2cd5622ca.png",
@@ -12,12 +12,13 @@
     "static/media/simple-movies.jpg": "/portfolio/static/media/simple-movies.cb8c56e22c3361dd7329.jpg",
     "static/media/currency-exchange.jpg": "/portfolio/static/media/currency-exchange.050f0d7b6090dfb67462.jpg",
     "static/media/react-lusion-app.jpg": "/portfolio/static/media/react-lusion-app.42e02ae829455962a19d.jpg",
+    "static/media/my imagess 01.png": "/portfolio/static/media/my imagess 01.439d5822f8ba8e3173a3.png",
     "index.html": "/portfolio/index.html",
     "main.830d85b1.css.map": "/portfolio/static/css/main.830d85b1.css.map",
-    "main.8643a02b.js.map": "/portfolio/static/js/main.8643a02b.js.map"
+    "main.e54619a5.js.map": "/portfolio/static/js/main.e54619a5.js.map"
   },
   "entrypoints": [
     "static/css/main.830d85b1.css",
-    "static/js/main.8643a02b.js"
+    "static/js/main.e54619a5.js"
   ]
 }
