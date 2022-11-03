@@ -4,17 +4,20 @@ import { Box, Container } from '@mui/system';
 import { useNavigate } from 'react-router-dom';
 import {startLink} from './MyProjectsData'
 
+
 import myImage from '../Images/my image 01.png'
 import myImage2 from '../Images/my image 02.png'
+import myImage3 from '../Images/my imagess 01.png'
 import '../Styles/Home.css'
 
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import useProgressiveImg from './useProgressiveImg';
 
 
 export const Home = () => {
    const navigate = useNavigate()
 
-
+   const [src, { blur }] = useProgressiveImg(myImage3, myImage);
 
    return (
       <Box height='100vh' overflow='hidden' >
@@ -34,10 +37,16 @@ export const Home = () => {
                   <Card  sx={{ borderRadius:'30px', boxShadow:2, bgcolor:'#000000ed'}}   >
                      <CardMedia
                         component="img"
-                        image={myImage}
+                        image={src}
+                        alt='Mustafa AbuTabl Pic'
                         height='100%'
                         width='100%'
-                        />
+                        style={{
+                           filter: blur ? "blur(20px)" : "none",
+                           transition: blur ? "none" : "filter 0.3s ease-out"
+                        }}
+                     />
+
                   </Card>
                </Box>
 

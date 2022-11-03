@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Avatar, Box, Container, Divider, Grid, Link, Stack, Typography } from '@mui/material'
 import myImage2 from '../Images/my image 02.png'
+import myImage3 from '../Images/my imagess 01.png'
 
 import {myPersonalInfo} from './MyProjectsData'
 import {LinearWithLabel} from './ProgressWithLabel'
@@ -11,11 +12,14 @@ import { SiRedux, SiMaterialui } from "react-icons/si";
 import { FiDownload } from "react-icons/fi";
 
 import '../Styles/index.css'
+import useProgressiveImg from './useProgressiveImg'
 
 
 
 
 export default function About() {
+
+  const [src, { blur }] = useProgressiveImg(myImage3, myImage2);
 
 
   const [mySkills, setMySkills] = useState([
@@ -66,9 +70,13 @@ export default function About() {
         <Grid item xs={12} lg={5}  color='text.secondary' >
           <Box display='flex' justifyContent='center' mb={{xs:6, lg:0}} >
             <Avatar
-              alt="Mustafa Abutabl Image"
-              src={myImage2}
+              alt="Mustafa Abutabl Pic"
+              src={src}
               sx={{ width: '300px', height: '300px', border:'4px solid #252525', objectFit: 'top',  }}
+              style={{
+                filter: blur ? "blur(20px)" : "none",
+                transition: blur ? "none" : "filter 0.3s ease-out"
+             }}
             />
           </Box>
         </Grid>
