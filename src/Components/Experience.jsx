@@ -32,8 +32,8 @@ export default function Experience() {
                      2022
                   </Typography>
 
+                  <Typography variant="h6" > Diploma in Front-end Developer </Typography>
                   <Typography variant="h6" > Pepo Teck </Typography>
-                  <Typography variant="h6" > Course Front-end Developer </Typography>
 
                </TimelineContent>
             </TimelineItem>
@@ -49,12 +49,8 @@ export default function Experience() {
                   <Typography variant="body1" component="span" bgcolor='divider' py={0.3} px={2} borderRadius='20px' >
                      Jul/2016    -    Sep/2018
                   </Typography>
-                  <Typography variant="h6" >
-                     Smama Group, Jeddah
-                  </Typography>
-                  <Typography variant="h6" >
-                      Biomedical Engineer
-                      </Typography>
+                  <Typography variant="h6" > Biomedical Engineer </Typography>
+                  <Typography variant="h6" > Smama Group, Jeddah </Typography>
                </TimelineContent>
             </TimelineItem>
 
@@ -69,12 +65,8 @@ export default function Experience() {
                   <Typography variant="body1" component="span" bgcolor='divider' py={0.3} px={2} borderRadius='20px' >
                      Feb/2014    -    Jul/2016
                   </Typography>
-                  <Typography variant="h6" >
-                     Saad Ahmed Saad EST, Jeddah
-                  </Typography>
-                  <Typography variant="h6" >
-                      Biomedical Engineer
-                      </Typography>
+                  <Typography variant="h6" > Biomedical Engineer </Typography>
+                  <Typography variant="h6" > Saad Ahmed Saad EST, Jeddah </Typography>
                </TimelineContent>
             </TimelineItem>
          </Grid>
@@ -90,12 +82,8 @@ export default function Experience() {
                   <Typography variant="body1" component="span" bgcolor='divider' py={0.3} px={2} borderRadius='20px' >
                      Mar/2013  -  Dec/2013
                   </Typography>
-                  <Typography variant="h6" >
-                     International Medical Center, Jeddah
-                      </Typography>
-                  <Typography variant="h6" >
-                     Biomedical Engineer Trainee and Volunteer
-                      </Typography>
+                  <Typography variant="h6" > Biomedical Engineer Trainee and Volunteer </Typography>
+                  <Typography variant="h6" > International Medical Center, Jeddah </Typography>
                </TimelineContent>
             </TimelineItem>
 
@@ -111,12 +99,8 @@ export default function Experience() {
                   <Typography variant="body1" component="span" bgcolor='divider' py={0.3} px={2} borderRadius='20px' >
                      2007 - 2012
                   </Typography>
-                  <Typography variant="h6" >
-                     Bachelor Degree
-                  </Typography>
-                  <Typography variant="h6"  >
-                     Medical Equipment Engineering
-                  </Typography>
+                  <Typography variant="h6"  > Medical Equipment Engineering </Typography>
+                  <Typography variant="h6" > Bachelor Degree </Typography>
                </TimelineContent>
             </TimelineItem>
          </Grid>

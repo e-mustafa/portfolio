@@ -108,15 +108,14 @@ export default function About() {
           </Box>
 
 
-
-          <Link href="/files/MUSTAFA-Abutabl-resume.pdf" target="_blank" download color='#ffffff' underline='none'>
-
-            <Box className='project-btn' component='button' color='text.primary' mt={5} >
-              <Box className='project-btn-icon' ><FiDownload /> </Box>
-              <Box className='project-btn-text' > Download CV </Box>
-            </Box>
-
-          </Link>
+          <Box display='flex'  >
+            <Link href='./files/MUSTAFA-Abutabl-resume.pdf' target="_blank" download color='#ffffff' underline='none'>
+              <Box className='project-btn'  color='text.primary' mt={5} >
+                <Box className='project-btn-icon' ><FiDownload /> </Box>
+                <Box className='project-btn-text' > Download CV </Box>
+              </Box>
+            </Link>
+          </Box>
 
         </Grid>
       </Grid>
