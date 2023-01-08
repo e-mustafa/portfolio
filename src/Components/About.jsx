@@ -7,7 +7,8 @@ import {myPersonalInfo} from './MyProjectsData'
 import {LinearWithLabel} from './ProgressWithLabel'
 import Experience from './Experience';
 
-import { FaBootstrap, FaGitAlt, FaGithub } from "react-icons/fa";
+import {  DiJavascript1} from "react-icons/di";
+import { FaBootstrap, FaGitAlt, FaGithub, FaHtml5, FaCss3Alt, FaReact} from "react-icons/fa";
 import { SiRedux, SiMaterialui } from "react-icons/si";
 import { FiDownload } from "react-icons/fi";
 
@@ -22,28 +23,6 @@ export default function About() {
   const [src, { blur }] = useProgressiveImg(myImage3, myImage2);
 
 
-  const [mySkills, setMySkills] = useState([
-    {name: 'HTML', value: 0},
-    {name: 'CSS', value: 0},
-    {name: 'Java Script', value: 0},
-    {name: 'React', value: 0},
-  ])
-
-  const setSkills = () =>{
-
-    const skills = [
-      {name: 'HTML', value: 90},
-      {name: 'CSS', value: 75},
-      {name: 'Java Script', value: 80},
-      {name: 'React', value: 77},
-    ]
-    setMySkills(skills)
-  }
-
-
-  useEffect( () =>{
-    setSkills()
-  },[])
 
 
 
@@ -108,7 +87,7 @@ export default function About() {
           </Box>
 
 
-          <Box display='flex'  >
+          <Box display='flex' justifyContent={{xs:'center', lg:'left'}} >
             <Link href='./files/MUSTAFA-Abutabl-resume.pdf' target="_blank" download color='#ffffff' underline='none'>
               <Box className='project-btn'  color='text.primary' mt={5} >
                 <Box className='project-btn-icon' ><FiDownload /> </Box>
@@ -128,54 +107,70 @@ export default function About() {
       <Box mt={6}>
         <Typography variant='h5' textTransform='uppercase' fontWeight={700} > Skills : </Typography>
 
-        <Grid container spacing={3} my={1} >
+        <Stack direction='row' my={1} color='text.secondary' textAlign='center' rowGap={5} flexWrap='wrap'  >
 
-          {mySkills.map((e, i) =>
-            <Grid item xs={12} lg={6}  key={i} color='text.secondary' >
-              <Stack  mr={{xs:0, lg:6}} >
-                <Typography variant='h5' mb={1} > {e.name} </Typography>
-                <LinearWithLabel value={e.value}   />
-              </Stack>
-            </Grid>
-          )}
+          <Box fontSize={60} color='#E56229' borderRadius='10px' flex={{xs:'1 1 50%', lg:'1 1 25%'}}>
+            <FaHtml5/>
+            <Typography variant='body1' color='praimary' mb={2} > HTML </Typography>
+          </Box>
 
-        </Grid>
+          <Box fontSize={60} color='#007FFF' borderRadius='10px' flex={{xs:'1 1 50%', lg:'1 1 25%'}}>
+            <FaCss3Alt/>
+            <Typography variant='body1' color='praimary' mb={2} > CSS </Typography>
+          </Box>
+
+          <Box fontSize={60} color='#EAD41C' borderRadius='10px' flex={{xs:'1 1 50%', lg:'1 1 25%'}}>
+            <DiJavascript1/>
+            <Typography variant='body1' color='praimary' mb={2} > JavaScript </Typography>
+          </Box>
+
+          <Box fontSize={60} color='#00CEF2' borderRadius='10px' flex={{xs:'1 1 50%', lg:'1 1 25%'}} >
+            <FaReact/>
+            <Typography variant='body1' color='praimary' mb={2} > React </Typography>
+          </Box>
+
+        </Stack>
       </Box>
 
+      <Divider  sx={{bgcolor:'Divider', width:'50%', mx:'auto', my:4}} />
 
 
 
       <Box my={6} >
         <Typography variant='h5' textTransform='uppercase'  fontWeight={700} mb={2} > Other Skills : </Typography>
 
-        <Stack direction='row' gap={3}   flexWrap='wrap' justifyContent={{xs:'center', lg:'left'}}
-         textAlign='center'   >
+        <Box display='flex' flexDirection='row'  gap={3}  flexWrap='wrap' textAlign='center'   >
 
-          <Box fontSize={60} color='#723DBE' borderRadius='10px'>
+          <Box fontSize={60} color='#723DBE' flex={{xs:'1 1 auto'}}>
             <FaBootstrap/>
             <Typography variant='body1' color='praimary' mb={2} > Bootstrap </Typography>
           </Box>
-          <Box fontSize={60} color='#007FFF' borderRadius='10px' >
+
+          <Box fontSize={60} color='#007FFF' flex={{xs:'1 1 auto'}} >
             <SiMaterialui/>
             <Typography variant='body1' color='praimary' mb={2} > Material Ui </Typography>
           </Box>
-          <Box fontSize={60} color='praimary' borderRadius='10px' >
+
+          <Box fontSize={60} color='praimary' flex={{xs:'1 1 auto'}} >
             <FaGithub/>
             <Typography variant='body1' color='praimary' mb={2} > Github </Typography>
           </Box>
-          <Box fontSize={60} color='#DE4C36' borderRadius='10px' >
+
+          <Box fontSize={60} color='#DE4C36' flex={{xs:'1 1 auto'}} >
             <FaGitAlt/>
             <Typography variant='body1' color='praimary' mb={2} > Git </Typography>
           </Box>
-          <Box fontSize={60} color='#764ABC' borderRadius='10px' >
+
+          <Box fontSize={60} color='#764ABC' flex={{xs:'1 1 auto'}} >
             <SiRedux/>
             <Typography variant='body1' color='praimary' mb={2} > Redux </Typography>
           </Box>
-        </Stack>
+        </Box>
       </Box>
 
 
-      <Divider  sx={{bgcolor:'Divider', width:'50%', mx:'auto', my:4}} />
+      <Divider  sx={{bgcolor:'gray', width:'50%', mx:'auto', my:4}} />
+
 
       {/* Experience component */}
       <Experience />
