@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Avatar, Box, Container, Divider, Grid, Link, Stack, Typography } from '@mui/material'
 import myImage2 from '../Images/my image 02.png'
 import myImage3 from '../Images/my imagess 01.png'
 
 import {myPersonalInfo} from './MyProjectsData'
-import {LinearWithLabel} from './ProgressWithLabel'
+// import {LinearWithLabel} from './ProgressWithLabel'
 import Experience from './Experience';
 
 import {  DiJavascript1} from "react-icons/di";
@@ -13,6 +13,8 @@ import { SiRedux, SiMaterialui } from "react-icons/si";
 import { FiDownload } from "react-icons/fi";
 
 import '../Styles/index.css'
+import 'animate.css';
+
 import useProgressiveImg from './useProgressiveImg'
 
 
@@ -104,29 +106,33 @@ export default function About() {
       <Divider  sx={{bgcolor:'gray', width:'50%', mx:'auto', my:4}} />
 
       {/* ------------------------------------- Skills ------------------------------ */}
-      <Box mt={6}>
+      <Box mt={6} >
         <Typography variant='h5' textTransform='uppercase' fontWeight={700} > Skills : </Typography>
 
-        <Stack direction='row' my={1} color='text.secondary' textAlign='center' rowGap={5} flexWrap='wrap'  >
+        <Stack direction='row' my={2} color='text.secondary' textAlign='center' gap={2} flexWrap='wrap' className='animate__animated animate__zoomIn'  >
 
-          <Box fontSize={60} color='#E56229' borderRadius='10px' flex={{xs:'1 1 50%', lg:'1 1 25%'}}>
+          <Box fontSize={60} color='#E56229' bgcolor="action.hover" paddingY="20px" borderRadius='10px'
+           flex={{xs:'1 1 40%', lg:'1 1 auto'}} boxShadow={3} sx={{'&:hover': { boxShadow: '0 4px 8px 0 rgb(1 141 255 / 42%)', transform: 'translateY(-10px)', transition:"all .5s"}}}  >
             <FaHtml5/>
-            <Typography variant='body1' color='praimary' mb={2} > HTML </Typography>
+            <Typography variant='body1' fontWeight={700} mb={2} > HTML </Typography>
           </Box>
 
-          <Box fontSize={60} color='#007FFF' borderRadius='10px' flex={{xs:'1 1 50%', lg:'1 1 25%'}}>
-            <FaCss3Alt/>
-            <Typography variant='body1' color='praimary' mb={2} > CSS </Typography>
+          <Box fontSize={60} color='#007FFF' bgcolor="action.hover" paddingY="20px" borderRadius='10px'
+           flex={{xs:'1 1 40%', lg:'1 1 auto'}} boxShadow={3} sx={{'&:hover': { boxShadow: '0 4px 8px 0 rgb(1 141 255 / 42%)', transform: 'translateY(-10px)', transition:"all .5s"}}}  >
+           <FaCss3Alt/>
+            <Typography variant='body1' fontWeight={700} mb={2} > CSS </Typography>
           </Box>
 
-          <Box fontSize={60} color='#EAD41C' borderRadius='10px' flex={{xs:'1 1 50%', lg:'1 1 25%'}}>
-            <DiJavascript1/>
-            <Typography variant='body1' color='praimary' mb={2} > JavaScript </Typography>
+          <Box fontSize={60} color='#EAD41C' bgcolor="action.hover" paddingY="20px" borderRadius='10px'
+           flex={{xs:'1 1 40%', lg:'1 1 auto'}} boxShadow={3} sx={{'&:hover': { boxShadow: '0 4px 8px 0 rgb(1 141 255 / 42%)', transform: 'translateY(-10px)', transition:"all .5s"}}}  >
+           <DiJavascript1/>
+            <Typography variant='body1' fontWeight={700} mb={2} > JavaScript </Typography>
           </Box>
 
-          <Box fontSize={60} color='#00CEF2' borderRadius='10px' flex={{xs:'1 1 50%', lg:'1 1 25%'}} >
-            <FaReact/>
-            <Typography variant='body1' color='praimary' mb={2} > React </Typography>
+          <Box fontSize={60} color='#00CEF2' bgcolor="action.hover" paddingY="20px" borderRadius='10px'
+           flex={{xs:'1 1 40%', lg:'1 1 auto'}} boxShadow={3} sx={{'&:hover': { boxShadow: '0 4px 8px 0 rgb(1 141 255 / 42%)', transform: 'translateY(-10px)', transition:"all .5s"}}}  >
+           <FaReact/>
+            <Typography variant='body1' fontWeight={700} mb={2} > React </Typography>
           </Box>
 
         </Stack>

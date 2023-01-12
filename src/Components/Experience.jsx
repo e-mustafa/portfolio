@@ -38,6 +38,23 @@ export default function Experience() {
                </TimelineContent>
             </TimelineItem>
 
+            <TimelineItem sx={{'&::before': {content:'none'}}}>
+               <TimelineSeparator>
+                  <TimelineDot color="primary"> <FaLaptopCode /> </TimelineDot>
+                  <TimelineConnector />
+               </TimelineSeparator>
+
+               <TimelineContent sx={{ py: '12px', px: 2, }}>
+                  <Typography variant="body1" component="span" bgcolor='divider' py={0.3} px={2} borderRadius='20px' >
+                  Nov/2018 - Present
+                  </Typography>
+
+                  <Typography variant="h6" > 3D VISUALISER </Typography>
+                  <Typography variant="h6" > Freelancer </Typography>
+
+               </TimelineContent>
+            </TimelineItem>
+
 
             <TimelineItem  sx={{'&::before': {content:'none'}}}>
                <TimelineSeparator>
@@ -55,6 +72,10 @@ export default function Experience() {
             </TimelineItem>
 
 
+         </Grid>
+
+         <Grid item xs={12} lg={6} >
+
             <TimelineItem  sx={{'&::before': {content:'none'}}}>
                <TimelineSeparator>
                   <TimelineDot color="primary"> <FaToolbox /> </TimelineDot>
@@ -69,9 +90,8 @@ export default function Experience() {
                   <Typography variant="h6" > Saad Ahmed Saad EST, Jeddah </Typography>
                </TimelineContent>
             </TimelineItem>
-         </Grid>
 
-         <Grid item xs={12} lg={6} >
+
             <TimelineItem  sx={{'&::before': {content:'none'}}}>
                <TimelineSeparator>
                   <TimelineDot color="primary"> <FaRegHospital /> </TimelineDot>

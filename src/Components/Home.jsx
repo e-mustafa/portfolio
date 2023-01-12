@@ -75,7 +75,7 @@ export const Home = () => {
                   <Typography  fontSize={{xs:'15px', lg:'20px'}}  color='text.secondary' textAlign='justify'
                    px={{xs:2, lg:10}} className='animate__animated animate__fadeIn'>
                    I'm an Egyption based front‑end developer focused on crafting clean & user‑friendly
-                   experiences, I am passionate about building excellent software that improves the lives of that improves lives of human beings.
+                   experiences, I am passionate about building excellent software that improves the live of human beings.
                   </Typography>
 
 

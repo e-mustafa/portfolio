@@ -1,11 +1,11 @@
 import React from 'react'
-import { Card, CardActionArea, CardMedia, Dialog, DialogContent, DialogTitle, IconButton, Link } from '@mui/material';
+import { Button, Card, CardActionArea, CardMedia, Dialog, DialogContent, DialogTitle, IconButton, Link, Stack } from '@mui/material';
 import { Zoom, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 
 import CloseIcon from '@mui/icons-material/Close';
-
-
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 
 
@@ -22,8 +22,9 @@ export default function ProjectDetails({open, setOpen, EProjectDetails}) {
          keepMounted
          onClose={handleClose}
          aria-describedby="details-dialog-slide"
+         sx={{transition:"all .5s cubic-bezier(0.4, 0, 0.2, 1) 0ms"}}
       >
-         <Box position='absolute' right={10} top={10} >
+         <Box position='absolute' right={10} top={10}  >
             <IconButton onClick={handleClose} > <CloseIcon /> </IconButton>
          </Box>
 
@@ -36,21 +37,31 @@ export default function ProjectDetails({open, setOpen, EProjectDetails}) {
                {EProjectDetails.Language && EProjectDetails.Language.length > 1 && EProjectDetails.Language.join(', ')}
             </Typography>
 
-            <Link href={EProjectDetails.link} target='_blank'  >
-               <Card sx={{my:3}} >
-                  <CardActionArea>
-                     <CardMedia
-                        component="img"
-                        image={EProjectDetails.img}
-                        alt={EProjectDetails.title}
-                     />
 
-                  </CardActionArea>
-               </Card>
-            </Link>
+            <Card sx={{my:3}} >
+               <CardActionArea className='portfolio-card' sx={{position:"relative"}}>
+                  <CardMedia
+                     component="img"
+                     image={EProjectDetails.img}
+                     alt={EProjectDetails.title}
+                  />
+
+               </CardActionArea>
+            </Card>
 
             <Typography variant="body1" color='text.secondary' > Description: </Typography>
             <Typography variant="body1" > {EProjectDetails.description} </Typography>
+
+
+            <Stack direction="row" justifyContent="space-around" marginTop={2}>
+               <Link underline='none' href={EProjectDetails.link} target='_blank'>
+                  <Button size="lg" variant="outlined" endIcon={<VisibilityIcon />} >Live Demo </Button>
+               </Link>
+
+               <Link underline='none' href={EProjectDetails.githubLink} target='_blank'>
+                  <Button size="lg" color='primary' variant="outlined" endIcon={<GitHubIcon />} > Github Link </Button>
+               </Link>
+            </Stack>
 
          </DialogContent>
       </Dialog>
