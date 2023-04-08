@@ -60,7 +60,7 @@ const Contact = () => {
               <Stack fontSize={30} textAlign='left' >
                 <Typography> Mail Me </Typography>
 
-                <Link href='mailto:eng.mustafax@gmail.com' underline="hover" sx={{color:'text.praimary'}}   fontSize={15}>
+                <Link href='mailto:eng.mustafax@gmail.com' underline="hover"  sx={{color:'text.praimary', textTransform: 'lowercase'}}   fontSize={15}>
                   Eng.mustafa@hotmail.com
                 </Link>
               </Stack>

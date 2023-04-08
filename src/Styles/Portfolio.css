@@ -95,3 +95,25 @@
    justify-content: center;
    align-items: center;
 }
+
+
+/* ------------------------------------------ */
+.portfolio-card img{
+   -webkit-transform: translateY(0);
+   transform: translateY(0);
+
+   -webkit-transition: 7s ease-out;
+   transition: 7s ease-out;
+   
+   transition-delay: 1s;
+
+   object-position: top
+}
+
+.portfolio-card img:hover{
+   transform: translateY(calc(-100% + 300px));
+   -webkit-transform: translateY(calc(-100% + 300px));
+   -moz-transform: translateY(calc(-100% + 300px));
+   -ms-transform: translateY(calc(-100% + 300px));
+   -o-transform: translateY(calc(-100% + 300px));
+}

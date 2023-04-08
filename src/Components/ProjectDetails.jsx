@@ -38,12 +38,14 @@ export default function ProjectDetails({open, setOpen, EProjectDetails}) {
             </Typography>
 
 
-            <Card sx={{my:3}} >
+            <Card sx={{my:3, overflow:"hidden", height:"300px"}} >
                <CardActionArea className='portfolio-card' sx={{position:"relative"}}>
                   <CardMedia
                      component="img"
                      image={EProjectDetails.img}
                      alt={EProjectDetails.title}
+                     width="100%"
+                     height="100%"
                   />
 
                </CardActionArea>
@@ -53,7 +55,7 @@ export default function ProjectDetails({open, setOpen, EProjectDetails}) {
             <Typography variant="body1" > {EProjectDetails.description} </Typography>
 
 
-            <Stack direction="row" justifyContent="space-around" marginTop={2}>
+            <Stack direction="row" justifyContent="space-around" marginTop={2} gap={2} flexWrap="wrap">
                <Link underline='none' href={EProjectDetails.link} target='_blank'>
                   <Button size="lg" variant="outlined" endIcon={<VisibilityIcon />} >Live Demo </Button>
                </Link>

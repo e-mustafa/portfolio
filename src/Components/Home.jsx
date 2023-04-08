@@ -20,7 +20,7 @@ export const Home = () => {
    const [src, { blur }] = useProgressiveImg(myImage3, myImage);
 
    return (
-      <Box height='100vh' overflow='hidden' >
+      <Box minHeight='100vh' overflow='hidden' >
 
          <Box className='home-bg-img' bgcolor='text.disabled' display={{xs:'none', lg:'block'}} ></Box>
 
@@ -30,7 +30,7 @@ export const Home = () => {
          >
 
          <Grid  container  height={{xs:'auto', lg:'100%'}}
-          display='flex' alignItems='center' justifyContent={{xs:'center', lg:'left'}}  p={{xs:2, lg:6}}>
+         display='flex' alignItems='center' justifyContent={{xs:'center', lg:'left'}}  p={{xs:2, lg:6}}>
 
             <Grid item  lg={4}  padding={0} height='100%' >
                <Box display={{xs:'none', lg:'flex'}} height='100%' >

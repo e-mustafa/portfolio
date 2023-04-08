@@ -1,13 +1,15 @@
 
-import templateCarouselImg from '../Images/Projects/template-w-carousel.png'
-import watchProductsImg from '../Images/Projects/watch-products.png'
+import templateCarouselImg from '../Images/Projects/template-w-carouse.jpg'
+import watchProductsImg from '../Images/Projects/watch-products.jpg'
 import basicCalculatorImg from '../Images/Projects/basic-calculator.png'
 import currencyExchangeImg from '../Images/Projects/currency-exchange.jpg'
-import caraShopingImg from '../Images/Projects/cara-shoping.png'
-import lusionShoppingImg from '../Images/Projects/react-lusion-app.jpg'
-import simpleMoviesImg from '../Images/Projects/simple-movies.jpg'
-import simpleMoviesReduxImg from '../Images/Projects/simple-movies-redux.jpg'
-
+import caraShopingImg from '../Images/Projects/cara-shoping.jpg'
+import lusionShoppingImg from '../Images/Projects/react-lusion.jpg'
+import simpleMoviesImg from '../Images/Projects/Simple Movies-full.jpg'
+import simpleMoviesReduxImg from '../Images/Projects/simple-movies-redux-full.jpg'
+import Tamplate101DesignImg from '../Images/Projects/Tamplate-101-full.jpg'
+import Tamplate102RocherImg from '../Images/Projects/Tamplate-102-Rocher-Furniture-full.jpg'
+import coffeeKingImg from '../Images/Projects/Tamplate-103-CoffeeKing-Bootstrap-full.jpg'
 
 export const startLink = ''
 
@@ -65,6 +67,30 @@ export const myPersonalInfo = [
 
 
 export const myProjects = [
+   {  id:111,
+      title:'Coffee shop template',
+      img: coffeeKingImg ,
+      link:'https://e-mustafa.github.io/Tamplate-103-CoffeeKing-Bootstrap',
+      githubLink:"https://github.com/e-mustafa/Tamplate-103-CoffeeKing-Bootstrap",
+      Language :['HTML', 'CSS', 'Bootstrap', 'Javascript'],
+      description: 'Coffee shop template with edit bootstrap default colors and JavaScript shopping cart, favorite list, register and sign in with validate. With notifications toast. You need to register and sign in to checkout and add items to favorite list.',
+   },
+   {  id:110,
+      title:'Rocher-Furniture Tamplate',
+      img: Tamplate102RocherImg ,
+      link:'https://e-mustafa.github.io/Tamplate-102-Rocher-Furniture',
+      githubLink:"https://github.com/e-mustafa/Tamplate-102-Rocher-Furniture",
+      Language :['HTML5', 'CSS3'],
+      description: 'Rocher-Furniture Tamplate html and some css3.',
+   },
+   {  id:109,
+      title:'Architectural Design Template',
+      img: Tamplate101DesignImg ,
+      link:'https://e-mustafa.github.io/Tamplate-101/',
+      githubLink:"https://github.com/e-mustafa/Tamplate-101",
+      Language :['HTML', 'CSS'],
+      description: 'Architectur Design template html & css only.',
+   },
    {  id:108,
       title:'Simple Movies with Redux',
       img: simpleMoviesReduxImg ,

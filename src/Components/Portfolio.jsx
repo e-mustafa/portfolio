@@ -114,18 +114,18 @@ export default function Projects() {
              onClick={()=> {setOpen(true); setProjectDetails(e)}} >
 
               <Box className="flip-card-inner">
-              {/* when hover over card show next box */}
-              <CardMedia className="flip-card-front"
-                component="img"
-                image={e.img} alt={e.title}
-              />
+                {/* when hover over card show next box */}
+                <CardMedia className="flip-card-front"
+                  component="img"
+                  image={e.img} alt={e.title} 
+                  sx={{objectPosition: "top"}}
+                />
 
 
-              <Box className="flip-card-back" >
-
+                <Box className="flip-card-back" >
                   <Typography variant="h6" color='white' > {e.title} </Typography>
                   {/* <Typography variant="h6" > {e.description} </Typography> */}
-              </Box>
+                </Box>
               </Box>
             </Card>
           </Grid>

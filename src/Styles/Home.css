@@ -1,10 +1,13 @@
 
 .home-bg-img{
-  transform: rotate(-12deg);
-  height: 120vh;
-  margin-right: 80%;
-  margin-top: -3%;
-  margin-left: -30%;
+  min-height: 120vh;
+  width: 400px;
+  margin-left: -12%;
+  -webkit-transform: skewX(10deg);
+  -moz-transform: skewX(10deg);
+  -ms-transform: skewX(10deg);
+  -o-transform: skewX(10deg);
+  transform: skewX(10deg);
 }
 
 

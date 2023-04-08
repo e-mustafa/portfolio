@@ -8,7 +8,7 @@ import {myPersonalInfo} from './MyProjectsData'
 import Experience from './Experience';
 
 import {  DiJavascript1} from "react-icons/di";
-import { FaBootstrap, FaGitAlt, FaGithub, FaHtml5, FaCss3Alt, FaReact} from "react-icons/fa";
+import { FaBootstrap, FaGitAlt, FaGithub, FaHtml5, FaCss3Alt, FaReact, FaSass} from "react-icons/fa";
 import { SiRedux, SiMaterialui } from "react-icons/si";
 import { FiDownload } from "react-icons/fi";
 
@@ -170,6 +170,11 @@ export default function About() {
           <Box fontSize={60} color='#764ABC' flex={{xs:'1 1 auto'}} >
             <SiRedux/>
             <Typography variant='body1' color='praimary' mb={2} > Redux </Typography>
+          </Box>
+
+          <Box fontSize={60} color='#c76494' flex={{xs:'1 1 auto'}} >
+          <FaSass />
+            <Typography variant='body1' color='praimary' mb={2} > SASS </Typography>
           </Box>
         </Box>
       </Box>
