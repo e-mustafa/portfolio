@@ -105,7 +105,7 @@
    -webkit-transition: 7s ease-out;
    transition: 7s ease-out;
    
-   transition-delay: 1s;
+   transition-delay: .5s;
 
    object-position: top
 }
