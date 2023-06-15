@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.2b4174f1.css",
-    "main.js": "/portfolio/static/js/main.4b463544.js",
+    "main.css": "/portfolio/static/css/main.70bd21c6.css",
+    "main.js": "/portfolio/static/js/main.127c2a0a.js",
     "static/media/Tamplate-103-CoffeeKing-Bootstrap-full.jpg": "/portfolio/static/media/Tamplate-103-CoffeeKing-Bootstrap-full.ce6a6e9eaf335a717e88.jpg",
     "static/media/Tamplate-101-full.jpg": "/portfolio/static/media/Tamplate-101-full.45a813f728dfc646311e.jpg",
     "static/media/cara-shoping.jpg": "/portfolio/static/media/cara-shoping.b4445eb198079d436b6c.jpg",
@@ -14,14 +14,15 @@
     "static/media/my image 02.png": "/portfolio/static/media/my image 02.a2bc76a79fc2cd5622ca.png",
     "static/media/my image 01.png": "/portfolio/static/media/my image 01.c64c506936c34fcdf62e.png",
     "static/media/basic-calculator.png": "/portfolio/static/media/basic-calculator.491c38aa5bd5808eeb41.png",
+    "static/media/devita-watchs-full.jpg": "/portfolio/static/media/devita-watchs-full.a3faeeeac2b899dc1454.jpg",
     "static/media/currency-exchange.jpg": "/portfolio/static/media/currency-exchange.050f0d7b6090dfb67462.jpg",
     "static/media/my imagess 01.png": "/portfolio/static/media/my imagess 01.439d5822f8ba8e3173a3.png",
     "index.html": "/portfolio/index.html",
-    "main.2b4174f1.css.map": "/portfolio/static/css/main.2b4174f1.css.map",
-    "main.4b463544.js.map": "/portfolio/static/js/main.4b463544.js.map"
+    "main.70bd21c6.css.map": "/portfolio/static/css/main.70bd21c6.css.map",
+    "main.127c2a0a.js.map": "/portfolio/static/js/main.127c2a0a.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b4174f1.css",
-    "static/js/main.4b463544.js"
+    "static/css/main.70bd21c6.css",
+    "static/js/main.127c2a0a.js"
   ]
 }
