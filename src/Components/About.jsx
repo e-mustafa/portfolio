@@ -1,7 +1,7 @@
 import React from 'react'
-import { Avatar, Box, Container, Divider, Grid, Link, Stack, Typography } from '@mui/material'
+import { Avatar, Box, Container, Divider, Grid, Link, Paper, Stack, Typography } from '@mui/material'
 import myImage2 from '../Images/my image 02.png'
-import myImage3 from '../Images/my imagess 01.png'
+import myImage3 from "../Images/my imagess 01.png";
 
 import {myPersonalInfo} from './MyProjectsData'
 // import {LinearWithLabel} from './ProgressWithLabel'
@@ -9,7 +9,7 @@ import Experience from './Experience';
 
 import {  DiJavascript1} from "react-icons/di";
 import { FaBootstrap, FaGitAlt, FaGithub, FaHtml5, FaCss3Alt, FaReact, FaSass} from "react-icons/fa";
-import { SiRedux, SiMaterialui } from "react-icons/si";
+import { SiRedux, SiMaterialui, SiNextdotjs } from "react-icons/si";
 import { FiDownload } from "react-icons/fi";
 
 import '../Styles/index.css'
@@ -110,8 +110,8 @@ export default function About() {
         <Typography variant='h5' textTransform='uppercase' fontWeight={700} > Skills : </Typography>
 
         <Stack direction='row' my={2} color='text.secondary' textAlign='center' gap={2} flexWrap='wrap' className='animate__animated animate__zoomIn'  >
-
-          <Box fontSize={60} color='#E56229' bgcolor="action.hover" paddingY="20px" borderRadius='10px'
+                
+          <Box fontSize={60} color='#e56229' bgcolor="action.hover" paddingY="20px" borderRadius='10px'
            flex={{xs:'1 1 40%', lg:'1 1 auto'}} boxShadow={3} sx={{'&:hover': { boxShadow: '0 4px 8px 0 rgb(1 141 255 / 42%)', transform: 'translateY(-10px)', transition:"all .5s"}}}  >
             <FaHtml5/>
             <Typography variant='body1' fontWeight={700} mb={2} > HTML </Typography>
@@ -175,6 +175,11 @@ export default function About() {
           <Box fontSize={60} color='#c76494' flex={{xs:'1 1 auto'}} >
           <FaSass />
             <Typography variant='body1' color='praimary' mb={2} > SASS </Typography>
+          </Box>
+
+          <Box fontSize={60} color='praimary' flex={{xs:'1 1 auto'}} >
+          <SiNextdotjs />
+            <Typography variant='body1' color='praimary' mb={2} > Next </Typography>
           </Box>
         </Box>
       </Box>

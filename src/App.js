@@ -25,7 +25,16 @@ function App() {
       mode: toggleDark ? "dark" : "light",
       primary:{main:'#018dff'},
       text:{disabled:'#018dff'}
-    }
+    },
+    components: {
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          backgroundImage: "linear-gradient( rgba(255, 255, 255, 0.16), rgb(1 141 255 / 43%), rgba(255, 255, 255, 0.16))"
+        },
+      },
+    },
+  },
   });
 
 

@@ -20,6 +20,7 @@ export default function ProjectDetails({open, setOpen, EProjectDetails}) {
          open={open}
          TransitionComponent={Zoom}
          keepMounted
+         disableScrollLock
          onClose={handleClose}
          aria-describedby="details-dialog-slide"
          sx={{transition:"all .5s cubic-bezier(0.4, 0, 0.2, 1) 0ms"}}
