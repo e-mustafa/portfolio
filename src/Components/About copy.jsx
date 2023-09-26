@@ -4,45 +4,39 @@ import {
 	Box,
 	Container,
 	Divider,
+	Grid,
 	Link,
+	Paper,
 	Stack,
 	Typography,
 } from '@mui/material';
-import Grid from '@mui/material/Unstable_Grid2/Grid2';
-
 import myImage2 from '../Images/my image 02.png';
 import myImage3 from '../Images/my imagess 01.png';
 
 import { myPersonalInfo, skills, skills2 } from './MyProjectsData';
 // import {LinearWithLabel} from './ProgressWithLabel'
 import Experience from './Experience';
+
+import { DiJavascript1 } from 'react-icons/di';
+import {
+	FaBootstrap,
+	FaGitAlt,
+	FaGithub,
+	FaHtml5,
+	FaCss3Alt,
+	FaReact,
+	FaSass,
+} from 'react-icons/fa';
+import { SiRedux, SiMaterialui, SiNextdotjs } from 'react-icons/si';
 import { FiDownload } from 'react-icons/fi';
 
 import '../Styles/index.css';
 import 'animate.css';
 
 import useProgressiveImg from './useProgressiveImg';
-import { motion } from 'framer-motion';
 
 export default function About() {
 	const [src, { blur }] = useProgressiveImg(myImage3, myImage2);
-   const container = {
-		hidden: { opacity: 1, scale: 0 },
-		visible: {
-			opacity: 1,
-			scale: 1,
-			transition: {
-				delayChildren: 0.3,
-				staggerChildren: 0.2,
-				duration: 0.5,
-			},
-		},
-	};
-
-	const item = {
-		hidden: { y: '100%', opacity: 0 },
-		visible: { y: 0, opacity: 1 },
-	};
 
 	return (
 		<Container sx={{ my: { xs: '12%', lg: '70px' } }}>
@@ -101,7 +95,8 @@ export default function About() {
 						width="100%"
 					>
 						<Typography variant="h5" textTransform="uppercase">
-							personal infos :
+							{' '}
+							personal infos :{' '}
 						</Typography>
 
 						<Box
@@ -113,7 +108,7 @@ export default function About() {
 						>
 							{myPersonalInfo &&
 								myPersonalInfo.map((e) => (
-									<Stack flex="0 0 50%" key={e?.id}>
+									<Stack flex="0 0 50%" key={e.id}>
 										<Stack
 											direction={{ xs: 'column', sm: 'row' }}
 											mb={1}
@@ -121,7 +116,7 @@ export default function About() {
 										>
 											<Typography color="text.secondary">
 												{' '}
-												{e?.title}{' '}
+												{e.title}{' '}
 											</Typography>
 											<Typography
 												fontWeight={900}
@@ -129,7 +124,7 @@ export default function About() {
 												mr={2}
 												className="animate__animated animate__flipInX"
 											>
-												{e?.info}
+												{e.info}
 											</Typography>
 										</Stack>
 									</Stack>
@@ -159,51 +154,51 @@ export default function About() {
 			<Divider sx={{ bgcolor: 'gray', width: '50%', mx: 'auto', my: 4 }} />
 
 			{/* ------------------------------------- Skills ------------------------------ */}
-			<Box mt={6} component="section">
+			<Box mt={6}>
 				<Typography variant="h5" textTransform="uppercase" fontWeight={700}>
 					Skills :
 				</Typography>
 
-				<Grid
-					container
-					spacing={2} 
-					my={4}
-					color="text.primary"
+				<Stack
+					direction="row"
+					my={2}
+					color="text.secondary"
 					textAlign="center"
-					// className="animate__animated animate__zoomIn"
-               component={motion.ul} variants={container} initial="hidden" animate="visible"
-				className="container"
+					gap={2}
+					flexWrap="wrap"
+					className="animate__animated animate__zoomIn"
 				>
 					{skills?.map((skill, i) => (
-						<Grid xs={6} sm={4} lg={3} key={skill?.id} sx={{listStyle:'none',flexGrow:'1 !important'}}  component={motion.li} variants={item}>
-							<Box
-								fontSize={60}
-								color={skill?.color || 'text.primary'}
-								bgcolor="action.hover"
-								paddingY="20px"
-								borderRadius="10px"
-								boxShadow={3}
-								sx={{
-									'&:hover': {
-										boxShadow: '0 4px 8px 0 rgb(1 141 255 / 42%)',
-										transform: 'translateY(-10px)',
-										transition: 'all .5s',
-										transitionDelay: 80 * i,
-									},
-								}}
+						<Box
+							key={skill?.id}
+							fontSize={60}
+							color={skill?.color || 'primary'}
+							bgcolor="action.hover"
+							paddingY="20px"
+							borderRadius="10px"
+							flex={{ xs: '1 1 40%', md: '1 1 auto' }}
+							boxShadow={3}
+							sx={{
+								'&:hover': {
+									boxShadow: '0 4px 8px 0 rgb(1 141 255 / 42%)',
+									transform: 'translateY(-10px)',
+									transition: 'all .5s',
+									transitionDelay: 80 * i,
+								},
+							}}
+						>
+							{skill?.icon}
+							<Typography
+								variant="body1"
+								fontWeight={700}
+								mb={2}
+								sx={{ userSelect: 'none' }}
 							>
-								{skill?.icon}
-								<Typography
-									variant="body1"
-									fontWeight={700}
-									sx={{ userSelect: 'none' }}
-								>
-									{skill?.title}
-								</Typography>
-							</Box>
-						</Grid>
+								{skill?.title}
+							</Typography>
+						</Box>
 					))}
-				</Grid>
+				</Stack>
 			</Box>
 
 			<Divider sx={{ bgcolor: 'Divider', width: '50%', mx: 'auto', my: 4 }} />
@@ -249,7 +244,7 @@ export default function About() {
 
 			<Divider sx={{ bgcolor: 'gray', width: '50%', mx: 'auto', my: 4 }} />
 
-			{/* Experience component ------------------------------------- */}
+			{/* Experience component */}
 			<Experience />
 		</Container>
 	);
