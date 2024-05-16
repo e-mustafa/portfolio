@@ -62,7 +62,7 @@ export default function About() {
 					textAlign={{ xs: 'left', lg: 'center' }}
 				>
 					About
-					<span style={{ color: 'var(--mainPraimary)' }}> Me</span>
+					<span style={{ color: 'var(--mainPrimary)' }}> Me</span>
 				</Typography>
 			</Stack>
 
@@ -120,7 +120,7 @@ export default function About() {
 											</Typography>
 											<Typography
 												fontWeight={900}
-												color={e?.color || 'var(--mainPraimary)'}
+												color={e?.color || 'var(--mainPrimary)'}
 												mr={2}
 												className="animate__animated animate__flipInX"
 											>

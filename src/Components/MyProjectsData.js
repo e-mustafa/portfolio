@@ -37,12 +37,12 @@ import { GiOpenBook } from 'react-icons/gi';
 export const startLink = '';
 
 export const myPersonalInfo = [
-	{ id: 201, title: 'Frist Name: ', info: 'Mustafa' },
+	{ id: 201, title: 'First Name: ', info: 'Mustafa' },
 	{ id: 202, title: 'Last Name: ', info: 'Abutabl' },
-	{ id: 203, title: 'Birthdate: ', info: '19 Oct 1989' },
+	// { id: 203, title: 'Birthdate: ', info: '19 Oct 1989' },
 	{ id: 204, title: 'Nationality: ', info: 'Egyption' },
 	{ id: 205, title: 'Military Service: ', info: ' Finshed' },
-	{ id: 206, title: 'Langages: ', info: 'Arabic, English' },
+	{ id: 206, title: 'Languages: ', info: 'Arabic, English' },
 	{ id: 208, title: 'Phone: ', info: '+20 111 970 6667' },
 	{ id: 207, title: 'Email: ', info: 'eng.mustafa@hotmail.com' },
 	{ id: 209, title: 'Freelance: ', info: 'Available', color: '#01ef92' },

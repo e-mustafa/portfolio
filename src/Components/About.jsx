@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-	Avatar,
-	Box,
-	Container,
-	Divider,
-	Link,
-	Stack,
-	Typography,
-} from '@mui/material';
+import { Avatar, Box, Container, Divider, Link, Stack, Typography } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2/Grid2';
 
 import myImage2 from '../Images/my image 02.png';
@@ -26,7 +18,7 @@ import { motion } from 'framer-motion';
 
 export default function About() {
 	const [src, { blur }] = useProgressiveImg(myImage3, myImage2);
-   const container = {
+	const container = {
 		hidden: { opacity: 1, scale: 0 },
 		visible: {
 			opacity: 1,
@@ -46,14 +38,14 @@ export default function About() {
 
 	return (
 		<Container sx={{ my: { xs: '12%', lg: '70px' } }}>
-			<Stack textTransform="uppercase" mb={6}>
+			<Stack textTransform="uppercase" mb={6} position="relative">
 				<Typography
 					fontSize={{ xs: '30px', lg: '100px' }}
 					fontWeight="800"
 					letterSpacing={15}
 					position="absolute"
-					top={40}
-					left={{ xs: 5, lg: '50%' }}
+					top={0}
+					left="50%"
 					sx={{ transform: 'translateX(-50%)' }}
 					color={(theme) =>
 						theme.palette.mode === 'dark' ? '#ffffff12' : '#1e253012'
@@ -65,10 +57,10 @@ export default function About() {
 				<Typography
 					fontWeight="900"
 					fontSize={{ xs: '25px', lg: '60px' }}
-					textAlign={{ xs: 'left', lg: 'center' }}
+					textAlign="center"
 				>
 					About
-					<span style={{ color: 'var(--mainPraimary)' }}> Me</span>
+					<span style={{ color: 'var(--mainPrimary)' }}> Me</span>
 				</Typography>
 			</Stack>
 
@@ -125,7 +117,7 @@ export default function About() {
 											</Typography>
 											<Typography
 												fontWeight={900}
-												color={e?.color || 'var(--mainPraimary)'}
+												color={e?.color || 'var(--mainPrimary)'}
 												mr={2}
 												className="animate__animated animate__flipInX"
 											>
@@ -166,16 +158,27 @@ export default function About() {
 
 				<Grid
 					container
-					spacing={2} 
+					spacing={2}
 					my={4}
 					color="text.primary"
 					textAlign="center"
 					// className="animate__animated animate__zoomIn"
-               component={motion.ul} variants={container} initial="hidden" animate="visible"
-				className="container"
+					component={motion.ul}
+					variants={container}
+					initial="hidden"
+					animate="visible"
+					className="container"
 				>
 					{skills?.map((skill, i) => (
-						<Grid xs={6} sm={4} lg={3} key={skill?.id} sx={{listStyle:'none',flexGrow:'1 !important'}}  component={motion.li} variants={item}>
+						<Grid
+							xs={6}
+							sm={4}
+							lg={3}
+							key={skill?.id}
+							sx={{ listStyle: 'none', flexGrow: '1 !important' }}
+							component={motion.li}
+							variants={item}
+						>
 							<Box
 								fontSize={60}
 								color={skill?.color || 'text.primary'}
@@ -183,9 +186,11 @@ export default function About() {
 								paddingY="20px"
 								borderRadius="10px"
 								boxShadow={3}
+								borderBottom="2px solid #d2b76f"
 								sx={{
 									'&:hover': {
-										boxShadow: '0 4px 8px 0 rgb(1 141 255 / 42%)',
+										// boxShadow: '0 4px 8px 0 rgb(1 141 255 / 42%)',
+										boxShadow: '0 4px 8px 0 rgb(210 183 111 / 42%)',
 										transform: 'translateY(-10px)',
 										transition: 'all .5s',
 										transitionDelay: 80 * i,
@@ -210,7 +215,7 @@ export default function About() {
 
 			<Box my={6}>
 				<Typography variant="h5" textTransform="uppercase" fontWeight={700} mb={2}>
-					Other Skills :
+					Related Skills :
 				</Typography>
 
 				<Box

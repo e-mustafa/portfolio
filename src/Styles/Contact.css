@@ -1,35 +1,23 @@
-:root{
-   --mainPraimary: #018dff
+:root {
+	/* --mainPrimary: #84754e; */
+	/* --mainPrimary: #018dff */
 }
 
-.social-icons{
-   width: 45px;
-   height: 45px;
-   border-radius: 50%;
-   font-size: 25px;
+.social-icons {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	font-size: 25px;
 
-   display: flex;
-   justify-content: center;
-   align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-   transition: all .5s;
-   cursor: pointer;
+	transition: all 0.5s;
+	cursor: pointer;
 }
 
-.social-icons:hover{
-   background: var(--mainPraimary);
-   color: white !important;
-
+.social-icons:hover {
+	background: var(--mainPrimary);
+	color: white !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
