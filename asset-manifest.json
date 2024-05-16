@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.70bd21c6.css",
-    "main.js": "/portfolio/static/js/main.c7d3e4f4.js",
+    "main.css": "/portfolio/static/css/main.946dbdeb.css",
+    "main.js": "/portfolio/static/js/main.0e48c439.js",
     "static/media/Tamplate-103-CoffeeKing-Bootstrap-full.jpg": "/portfolio/static/media/Tamplate-103-CoffeeKing-Bootstrap-full.ce6a6e9eaf335a717e88.jpg",
     "static/media/Tamplate-101-full.jpg": "/portfolio/static/media/Tamplate-101-full.45a813f728dfc646311e.jpg",
     "static/media/cara-shoping.jpg": "/portfolio/static/media/cara-shoping.b4445eb198079d436b6c.jpg",
@@ -18,11 +18,11 @@
     "static/media/currency-exchange.jpg": "/portfolio/static/media/currency-exchange.050f0d7b6090dfb67462.jpg",
     "static/media/my imagess 01.png": "/portfolio/static/media/my imagess 01.439d5822f8ba8e3173a3.png",
     "index.html": "/portfolio/index.html",
-    "main.70bd21c6.css.map": "/portfolio/static/css/main.70bd21c6.css.map",
-    "main.c7d3e4f4.js.map": "/portfolio/static/js/main.c7d3e4f4.js.map"
+    "main.946dbdeb.css.map": "/portfolio/static/css/main.946dbdeb.css.map",
+    "main.0e48c439.js.map": "/portfolio/static/js/main.0e48c439.js.map"
   },
   "entrypoints": [
-    "static/css/main.70bd21c6.css",
-    "static/js/main.c7d3e4f4.js"
+    "static/css/main.946dbdeb.css",
+    "static/js/main.0e48c439.js"
   ]
 }
