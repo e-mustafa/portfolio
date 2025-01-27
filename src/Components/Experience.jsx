@@ -23,7 +23,7 @@ export default function Experience() {
 			<Timeline position="right" color="text.white" sx={{ px: 0, overflow: 'hidden' }}>
 				<Grid container alignItems='end'>
                <Grid item xs={12} md={6}>
-                  {timelineData.map((item, index) => index <= (timelineData?.length/2 )&& (
+                  {timelineData.map((item, index) => index < (timelineData?.length/2 )&& (
                      <TimelineItem
                         key={index}
                         sx={{
@@ -53,7 +53,7 @@ export default function Experience() {
 					</Grid>
 
                <Grid item xs={12} md={6}>
-                  {timelineData.map((item, index) => index > (timelineData?.length/2 )&& (
+                  {timelineData.map((item, index) => index >= (timelineData?.length/2 )&& (
                      <TimelineItem
                         key={index}
                         sx={{
