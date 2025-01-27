@@ -37,7 +37,7 @@ import {
 	SiTailwindcss,
 } from "react-icons/si";
 import { GiOpenBook } from "react-icons/gi";
-import { color } from "framer-motion";
+// import { color } from "framer-motion";
 
 export const startLink = "";
 
