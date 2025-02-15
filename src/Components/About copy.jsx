@@ -1,15 +1,5 @@
 import React from 'react';
-import {
-	Avatar,
-	Box,
-	Container,
-	Divider,
-	Grid,
-	Link,
-	Paper,
-	Stack,
-	Typography,
-} from '@mui/material';
+import { Avatar, Box, Container, Divider, Grid, Link, Paper, Stack, Typography } from '@mui/material';
 import myImage2 from '../Images/my image 02.png';
 import myImage3 from '../Images/my imagess 01.png';
 
@@ -18,15 +8,7 @@ import { myPersonalInfo, skills, skills2 } from './MyProjectsData';
 import Experience from './Experience';
 
 import { DiJavascript1 } from 'react-icons/di';
-import {
-	FaBootstrap,
-	FaGitAlt,
-	FaGithub,
-	FaHtml5,
-	FaCss3Alt,
-	FaReact,
-	FaSass,
-} from 'react-icons/fa';
+import { FaBootstrap, FaGitAlt, FaGithub, FaHtml5, FaCss3Alt, FaReact, FaSass } from 'react-icons/fa';
 import { SiRedux, SiMaterialui, SiNextdotjs } from 'react-icons/si';
 import { FiDownload } from 'react-icons/fi';
 
@@ -40,37 +22,31 @@ export default function About() {
 
 	return (
 		<Container sx={{ my: { xs: '12%', lg: '70px' } }}>
-			<Stack textTransform="uppercase" mb={6}>
+			<Stack textTransform='uppercase' mb={6}>
 				<Typography
 					fontSize={{ xs: '30px', lg: '100px' }}
-					fontWeight="800"
+					fontWeight='800'
 					letterSpacing={15}
-					position="absolute"
+					position='absolute'
 					top={40}
 					left={{ xs: 5, lg: '50%' }}
 					sx={{ transform: 'translateX(-50%)' }}
-					color={(theme) =>
-						theme.palette.mode === 'dark' ? '#ffffff12' : '#1e253012'
-					}
+					color={(theme) => (theme.palette.mode === 'dark' ? '#ffffff12' : '#1e253012')}
 				>
 					Resume
 				</Typography>
 
-				<Typography
-					fontWeight="900"
-					fontSize={{ xs: '25px', lg: '60px' }}
-					textAlign={{ xs: 'left', lg: 'center' }}
-				>
+				<Typography fontWeight='900' fontSize={{ xs: '25px', lg: '60px' }} textAlign={{ xs: 'left', lg: 'center' }}>
 					About
 					<span style={{ color: 'var(--mainPrimary)' }}> Me</span>
 				</Typography>
 			</Stack>
 
 			<Grid container spacing={3}>
-				<Grid item xs={12} lg={5} color="text.secondary">
-					<Box display="flex" justifyContent="center" mb={{ xs: 6, lg: 0 }}>
+				<Grid item xs={12} lg={5} color='text.secondary'>
+					<Box display='flex' justifyContent='center' mb={{ xs: 6, lg: 0 }}>
 						<Avatar
-							alt="Mustafa Abutabl Pic"
+							alt='Mustafa Abutabl Pic'
 							src={src}
 							sx={{
 								width: '300px',
@@ -88,41 +64,23 @@ export default function About() {
 
 				{/* ------------------------------------- personal infos ------------------------------ */}
 				<Grid item xs={12} lg={7}>
-					<Box
-						display="flex"
-						flexDirection="column"
-						justifyContent="center"
-						width="100%"
-					>
-						<Typography variant="h5" textTransform="uppercase">
+					<Box display='flex' flexDirection='column' justifyContent='center' width='100%'>
+						<Typography variant='h5' textTransform='uppercase'>
 							{' '}
 							personal infos :{' '}
 						</Typography>
 
-						<Box
-							display="flex"
-							flexWrap="wrap"
-							justifyContent="space-between"
-							mt={3}
-							color="text.secondary"
-						>
+						<Box display='flex' flexWrap='wrap' justifyContent='space-between' mt={3} color='text.secondary'>
 							{myPersonalInfo &&
 								myPersonalInfo.map((e) => (
-									<Stack flex="0 0 50%" key={e.id}>
-										<Stack
-											direction={{ xs: 'column', sm: 'row' }}
-											mb={1}
-											columnGap={2}
-										>
-											<Typography color="text.secondary">
-												{' '}
-												{e.title}{' '}
-											</Typography>
+									<Stack flex='0 0 50%' key={e.id}>
+										<Stack direction={{ xs: 'column', sm: 'row' }} mb={1} columnGap={2}>
+											<Typography color='text.secondary'> {e.title} </Typography>
 											<Typography
 												fontWeight={900}
 												color={e?.color || 'var(--mainPrimary)'}
 												mr={2}
-												className="animate__animated animate__flipInX"
+												className='animate__animated animate__flipInX'
 											>
 												{e.info}
 											</Typography>
@@ -132,19 +90,13 @@ export default function About() {
 						</Box>
 					</Box>
 
-					<Box display="flex" justifyContent={{ xs: 'center', lg: 'left' }}>
-						<Link
-							href="./files/MUSTAFA-Abutabl-resume.pdf"
-							target="_blank"
-							download
-							color="#ffffff"
-							underline="none"
-						>
-							<Box className="project-btn" color="text.primary" mt={5}>
-								<Box className="project-btn-icon">
+					<Box display='flex' justifyContent={{ xs: 'center', lg: 'left' }}>
+						<Link href='./files/MUSTAFA-Abutabl-resume.pdf' target='_blank' download color='#ffffff' underline='none'>
+							<Box className='project-btn' color='text.primary' mt={5}>
+								<Box className='project-btn-icon'>
 									<FiDownload />{' '}
 								</Box>
-								<Box className="project-btn-text"> Download CV </Box>
+								<Box className='project-btn-text'> Download CV </Box>
 							</Box>
 						</Link>
 					</Box>
@@ -155,27 +107,27 @@ export default function About() {
 
 			{/* ------------------------------------- Skills ------------------------------ */}
 			<Box mt={6}>
-				<Typography variant="h5" textTransform="uppercase" fontWeight={700}>
+				<Typography variant='h5' textTransform='uppercase' fontWeight={700}>
 					Skills :
 				</Typography>
 
 				<Stack
-					direction="row"
+					direction='row'
 					my={2}
-					color="text.secondary"
-					textAlign="center"
+					color='text.secondary'
+					textAlign='center'
 					gap={2}
-					flexWrap="wrap"
-					className="animate__animated animate__zoomIn"
+					flexWrap='wrap'
+					className='animate__animated animate__zoomIn'
 				>
 					{skills?.map((skill, i) => (
 						<Box
 							key={skill?.id}
 							fontSize={60}
 							color={skill?.color || 'primary'}
-							bgcolor="action.hover"
-							paddingY="20px"
-							borderRadius="10px"
+							bgcolor='action.hover'
+							paddingY='20px'
+							borderRadius='10px'
 							flex={{ xs: '1 1 40%', md: '1 1 auto' }}
 							boxShadow={3}
 							sx={{
@@ -188,12 +140,7 @@ export default function About() {
 							}}
 						>
 							{skill?.icon}
-							<Typography
-								variant="body1"
-								fontWeight={700}
-								mb={2}
-								sx={{ userSelect: 'none' }}
-							>
+							<Typography variant='body1' fontWeight={700} mb={2} sx={{ userSelect: 'none' }}>
 								{skill?.title}
 							</Typography>
 						</Box>
@@ -204,24 +151,13 @@ export default function About() {
 			<Divider sx={{ bgcolor: 'Divider', width: '50%', mx: 'auto', my: 4 }} />
 
 			<Box my={6}>
-				<Typography variant="h5" textTransform="uppercase" fontWeight={700} mb={2}>
+				<Typography variant='h5' textTransform='uppercase' fontWeight={700} mb={2}>
 					Other Skills :
 				</Typography>
 
-				<Box
-					display="flex"
-					flexDirection="row"
-					gap={3}
-					flexWrap="wrap"
-					textAlign="center"
-				>
+				<Box display='flex' flexDirection='row' gap={3} flexWrap='wrap' textAlign='center'>
 					{skills2?.map((skill, i) => (
-						<Box
-							key={skill?.id}
-							fontSize={60}
-							color={skill?.color || 'primary'}
-							flex={{ xs: '1 1 auto' }}
-						>
+						<Box key={skill?.id} fontSize={60} color={skill?.color || 'primary'} flex={{ xs: '1 1 auto' }}>
 							<Box
 								sx={{
 									'&:hover': {
@@ -234,7 +170,7 @@ export default function About() {
 								{skill?.icon}
 							</Box>
 
-							<Typography variant="body1" mb={2}>
+							<Typography variant='body1' mb={2}>
 								{skill?.title}
 							</Typography>
 						</Box>

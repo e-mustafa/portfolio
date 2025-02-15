@@ -23,7 +23,6 @@ function App() {
 			// primary:{main:'#018dff'},
 			text: { disabled: '#d2b76f' },
 			// text: { disabled: '#018dff' },
-			
 		},
 		components: {
 			MuiPaper: {
@@ -51,10 +50,10 @@ function App() {
 			<NavigationLg />
 
 			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/about" element={<About />} />
-				<Route path="/contact" element={<Contact />} />
-				<Route path="/portfolio" element={<Portfolio />} />
+				<Route path='/' element={<Home />} />
+				<Route path='/about' element={<About />} />
+				<Route path='/contact' element={<Contact />} />
+				<Route path='/portfolio' element={<Portfolio />} />
 			</Routes>
 
 			<NavbarBottom />

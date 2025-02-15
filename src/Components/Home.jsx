@@ -18,49 +18,43 @@ export const Home = () => {
 	const [src, { blur }] = useProgressiveImg(myImage3, myImage);
 
 	return (
-		<Box minHeight="710px" height="100vh" overflow="hidden">
+		<Box minHeight='710px' height='100vh' overflow='hidden'>
 			<Box
-				className="home-bg-img"
-				minHeight="710px"
-				height="100vh"
-				bgcolor="text.disabled"
+				className='home-bg-img'
+				minHeight='710px'
+				height='100vh'
+				bgcolor='text.disabled'
 				display={{ xs: 'none', md: 'block' }}
 			></Box>
 
-			<Container maxWidth="xs">
+			<Container maxWidth='xs'>
 				<Box
-					display="flex"
-					alignItems="center"
-					justifyContent="center"
-					position="absolute"
+					display='flex'
+					alignItems='center'
+					justifyContent='center'
+					position='absolute'
 					top={0}
 					left={0}
-					height="100%"
-					minHeight="710px"
+					height='100%'
+					minHeight='710px'
 				>
 					<Grid
 						container
 						height={{ xs: 'auto', md: '100%' }}
-						display="flex"
-						alignItems="center"
+						display='flex'
+						alignItems='center'
 						justifyContent={{ xs: 'center', md: 'left' }}
 						p={{ xs: 2, md: 6 }}
 					>
-						<Grid item md={4} padding={0} height="100%">
-							<Box display={{ xs: 'none', md: 'flex' }} height="100%">
-								<Card
-									sx={{
-										borderRadius: '30px',
-										boxShadow: 2,
-										bgcolor: '#000000ed',
-									}}
-								>
+						<Grid item md={4} padding={0} height='100%'>
+							<Box display={{ xs: 'none', md: 'flex' }} height='100%'>
+								<Card sx={{ borderRadius: '30px' }}>
 									<CardMedia
-										component="img"
+										component='img'
 										image={src}
-										alt="Mustafa AbuTabl Pic"
-										height="100%"
-										width="100%"
+										alt='Mustafa AbuTabl Pic'
+										height='100%'
+										width='100%'
 										style={{
 											filter: blur ? 'blur(20px)' : 'none',
 											transition: blur ? 'none' : 'filter 0.3s ease-out',
@@ -71,7 +65,7 @@ export const Home = () => {
 
 							<Box display={{ xs: 'flex', md: 'none' }}>
 								<Avatar
-									alt="Mustafa Abutabl Image"
+									alt='Mustafa Abutabl Image'
 									src={myImage2}
 									sx={{
 										width: '100%',
@@ -88,18 +82,18 @@ export const Home = () => {
 							<Box>
 								<Typography
 									fontSize={{ xs: '25px', md: '50px' }}
-									fontWeight="bold"
-									color="text.disabled"
-									textAlign="center"
+									fontWeight='bold'
+									color='text.disabled'
+									textAlign='center'
 								>
 									MUSTAFA Abutabl
 								</Typography>
 
 								<Typography
-									className="animate-charcter"
+									className='animate-charcter'
 									fontSize={{ xs: '21px', md: '40px' }}
-									fontWeight="bold"
-									textAlign="center"
+									fontWeight='bold'
+									textAlign='center'
 									my={1}
 								>
 									Full-stack developer
@@ -107,30 +101,28 @@ export const Home = () => {
 
 								<Typography
 									fontSize={{ xs: '15px', md: '20px' }}
-									color="text.secondary"
-									textAlign="justify"
+									color='text.secondary'
+									textAlign='justify'
 									px={{ xs: 2, md: 10 }}
-									className="animate__animated animate__fadeIn"
+									className='animate__animated animate__fadeIn'
 								>
-									I'm an Egyptian based full-stack developer focused on crafting
-									clean & user‑friendly experiences, I am passionate about
-									building excellent software that improves the live of human
-									beings.
+									I'm an Egyptian based full-stack developer focused on crafting clean & user‑friendly experiences,
+									I am passionate about building excellent software that improves the live of human beings.
 								</Typography>
 
 								<Box
-									className="project-btn"
-									component="button"
+									className='project-btn'
+									component='button'
 									mt={5}
-									mx="auto"
-									color="text.primary"
+									mx='auto'
+									color='text.primary'
 									boxShadow={2}
 									onClick={() => navigate(`${startLink}/about`)}
 								>
-									<Box className="project-btn-icon">
+									<Box className='project-btn-icon'>
 										<ArrowForwardIosIcon />
 									</Box>
-									<Box className="project-btn-text"> More about me </Box>
+									<Box className='project-btn-text'> More about me </Box>
 								</Box>
 							</Box>
 						</Grid>

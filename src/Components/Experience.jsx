@@ -1,10 +1,10 @@
-import React, { Fragment } from "react";
-import { Grid, Typography } from "@mui/material";
+import React, { Fragment } from 'react';
+import { Grid, Typography } from '@mui/material';
 
-import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineDot, TimelineContent } from "@mui/lab";
+import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineDot, TimelineContent } from '@mui/lab';
 
-import "animate.css";
-import { timelineData } from "./MyProjectsData";
+import 'animate.css';
+import { timelineData } from './MyProjectsData';
 
 export default function Experience() {
 	return (
@@ -13,7 +13,7 @@ export default function Experience() {
 				Experience :
 			</Typography>
 
-			<Timeline position='right' color='text.white' sx={{ px: 0, overflow: "hidden" }}>
+			<Timeline position='right' color='text.white' sx={{ px: 0, overflow: 'hidden' }}>
 				<Grid container alignItems='end'>
 					<Grid item xs={12} md={6}>
 						{timelineData.map(
@@ -22,15 +22,22 @@ export default function Experience() {
 									<TimelineItem
 										key={index}
 										sx={{
-											"&::before": { content: "none" },
+											'&::before': { content: 'none' },
 										}}
 									>
 										<TimelineSeparator>
 											<TimelineDot color='primary'>{item.icon}</TimelineDot>
 											<TimelineConnector />
 										</TimelineSeparator>
-										<TimelineContent sx={{ py: "12px", px: 2 }}>
-											<Typography variant='body1' component='span' bgcolor='divider' py={0.3} px={2} borderRadius='20px'>
+										<TimelineContent sx={{ py: '12px', px: 2 }}>
+											<Typography
+												variant='body1'
+												component='span'
+												bgcolor='divider'
+												py={0.3}
+												px={2}
+												borderRadius='20px'
+											>
 												{item.date}
 											</Typography>
 											<Typography variant='h6'>{item.title}</Typography>
@@ -48,15 +55,22 @@ export default function Experience() {
 									<TimelineItem
 										key={index}
 										sx={{
-											"&::before": { content: "none" },
+											'&::before': { content: 'none' },
 										}}
 									>
 										<TimelineSeparator>
 											<TimelineDot color='primary'>{item.icon}</TimelineDot>
 											<TimelineConnector />
 										</TimelineSeparator>
-										<TimelineContent sx={{ py: "12px", px: 2 }}>
-											<Typography variant='body1' component='span' bgcolor='divider' py={0.3} px={2} borderRadius='20px'>
+										<TimelineContent sx={{ py: '12px', px: 2 }}>
+											<Typography
+												variant='body1'
+												component='span'
+												bgcolor='divider'
+												py={0.3}
+												px={2}
+												borderRadius='20px'
+											>
 												{item.date}
 											</Typography>
 											<Typography variant='h6'>{item.title}</Typography>

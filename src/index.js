@@ -7,9 +7,8 @@ import ScrollToTop from './ScrollToTop';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <HashRouter>
-    <ScrollToTop />
-    <App />
-  </HashRouter>
+	<HashRouter>
+		<ScrollToTop />
+		<App />
+	</HashRouter>
 );
-

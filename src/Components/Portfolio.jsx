@@ -35,54 +35,36 @@ export default function Projects() {
 	const [filtertype, setFiltertype] = useState('All');
 
 	const handelFilter = (e) => {
-		setRepos(
-			myProjects?.filter((v) =>
-				v?.Language?.includes(e.currentTarget.attributes?.value?.value)
-			)
-		);
+		setRepos(myProjects?.filter((v) => v?.Language?.includes(e.currentTarget.attributes?.value?.value)));
 		setFiltertype(e.currentTarget.attributes?.value?.value);
 	};
 
 	return (
 		<>
-			<Container sx={{ my: { xs: '12%', lg: '70px' } }} component="section">
-				<Stack textTransform="uppercase" mb={6}>
+			<Container sx={{ my: { xs: '12%', lg: '70px' } }} component='section'>
+				<Stack textTransform='uppercase' mb={6}>
 					<Typography
 						fontSize={{ xs: '30px', lg: '100px' }}
-						fontWeight="800"
+						fontWeight='800'
 						letterSpacing={15}
-						position="absolute"
+						position='absolute'
 						top={40}
 						left='50%'
 						sx={{ transform: 'translateX(-50%)' }}
-						color={(theme) =>
-							theme.palette.mode === 'dark' ? '#ffffff12' : '#1e253012'
-						}
+						color={(theme) => (theme.palette.mode === 'dark' ? '#ffffff12' : '#1e253012')}
 					>
 						Works
 					</Typography>
 
-					<Typography
-						fontWeight="900"
-						fontSize={{ xs: '25px', lg: '60px' }}
-						textAlign='center'
-					>
+					<Typography fontWeight='900' fontSize={{ xs: '25px', lg: '60px' }} textAlign='center'>
 						My
 						<span style={{ color: 'var(--mainPrimary)' }}> Portfolio</span>
 					</Typography>
 				</Stack>
 
-				<Stack
-					direction="row"
-					gap={{ xs: 2, md: 4 }}
-					justifyContent="center"
-					mt={10}
-					mb={4}
-				>
+				<Stack direction='row' gap={{ xs: 2, md: 4 }} justifyContent='center' mt={10} mb={4}>
 					<Typography
-						className={`project-type ${
-							filtertype === 'All' && 'project-type-active'
-						}`}
+						className={`project-type ${filtertype === 'All' && 'project-type-active'}`}
 						onClick={() => {
 							setRepos(myProjects);
 							setFiltertype('All');
@@ -92,15 +74,9 @@ export default function Projects() {
 					</Typography>
 
 					<Typography
-						className={`project-type ${
-							filtertype === 'CSS' && 'project-type-active'
-						}`}
+						className={`project-type ${filtertype === 'CSS' && 'project-type-active'}`}
 						onClick={() => {
-							setRepos(
-								myProjects.filter(
-									(e) => !e.Language.includes('Javascript', 'React')
-								)
-							);
+							setRepos(myProjects.filter((e) => !e.Language.includes('Javascript', 'React')));
 							setFiltertype('CSS');
 						}}
 					>
@@ -108,20 +84,16 @@ export default function Projects() {
 					</Typography>
 
 					<Typography
-						className={`project-type ${
-							filtertype === 'Javascript' && 'project-type-active'
-						}`}
-						value="Javascript"
+						className={`project-type ${filtertype === 'Javascript' && 'project-type-active'}`}
+						value='Javascript'
 						onClick={(e) => handelFilter(e)}
 					>
 						Javascript
 					</Typography>
 
 					<Typography
-						className={`project-type ${
-							filtertype === 'React' && 'project-type-active'
-						}`}
-						value="React"
+						className={`project-type ${filtertype === 'React' && 'project-type-active'}`}
+						value='React'
 						onClick={(e) => handelFilter(e)}
 					>
 						React
@@ -133,8 +105,8 @@ export default function Projects() {
 					spacing={3}
 					component={motion.ul}
 					variants={container}
-					initial="hidden"
-					animate="visible"
+					initial='hidden'
+					animate='visible'
 					// className='animate__animated animate__zoomIn'
 				>
 					{repos &&
@@ -150,25 +122,25 @@ export default function Projects() {
 								variants={item}
 							>
 								<Card
-									className="flip-card"
+									className='flip-card'
 									component={motion.div}
 									onClick={() => {
 										setOpen(true);
 										setProjectDetails(e);
 									}}
 								>
-									<Box className="flip-card-inner">
+									<Box className='flip-card-inner'>
 										{/* when hover over card show next box */}
 										<CardMedia
-											className="flip-card-front"
-											component="img"
+											className='flip-card-front'
+											component='img'
 											image={e.img}
 											alt={e?.title}
 											sx={{ objectPosition: 'top' }}
 										/>
 
-										<Box className="flip-card-back">
-											<Typography variant="h6" color="white">
+										<Box className='flip-card-back'>
+											<Typography variant='h6' color='white'>
 												{' '}
 												{e?.title}{' '}
 											</Typography>
@@ -181,11 +153,7 @@ export default function Projects() {
 				</Grid>
 			</Container>
 
-			<ProjectDetails
-				open={open}
-				setOpen={setOpen}
-				EProjectDetails={EProjectDetails}
-			/>
+			<ProjectDetails open={open} setOpen={setOpen} EProjectDetails={EProjectDetails} />
 		</>
 	);
 }
