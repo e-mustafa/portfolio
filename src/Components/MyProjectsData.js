@@ -76,12 +76,12 @@ export const skills2 = [
 ];
 
 export const timelineData = [
-	{
-		date: 'Jul/2024 - Present',
-		title: 'Front-end web Developer',
-		organization: 'Sllm for E-Commerce',
-		icon: <FaLaptopCode />,
-	},
+	// {
+	// 	date: 'Jul/2024 - Present',
+	// 	title: 'Front-end web Developer',
+	// 	organization: 'Sllm for E-Commerce',
+	// 	icon: <FaLaptopCode />,
+	// },
 	{
 		date: 'Dec/2022 - Sep/2023',
 		title: 'Front/Back-end Developer Diploma',
