@@ -12,6 +12,7 @@ import coffeeKingImg from '../Images/Projects/Tamplate-103-CoffeeKing-Bootstrap-
 import devitaWatchsImg from '../Images/Projects/devita-watchs-full.jpg';
 import academyFrontendImg from '../Images/Projects/SEF-Academy-Trining-01.png';
 import academyFullStackImg from '../Images/Projects/SEF-Academy-Trining-02.png';
+import sllmBlogImg from '../Images/Projects/SLLM Blogs-sllm-blog-redux.vercel.app.webp';
 import {
 	FaBootstrap,
 	FaCss3Alt,
@@ -137,6 +138,16 @@ export const myProjects = [
 	// 	description:
 	// 		"Developed a government services website to facilitate the completion of official paperwork and procedures. As part of the Backend team, I built almost the entire project except for the users section. I developed APIs and managed databases for Blogs, Chat, Services, and Papers. Additionally, I contributed to the Frontend by completing the Papers section due to time constraints faced by the Frontend team.", // Project description
 	// },
+	{
+		id: 117,
+		title: 'Sllm Blog Website',
+		img: sllmBlogImg,
+		link: 'https://sllm-blog-redux.vercel.app/',
+		githubLink: 'https://github.com/e-mustafa/sllm-blog-redux',
+		Language: ['HTML', 'CSS', 'tailwindcss', 'JavaScript', 'React', 'Node.js'],
+		description:
+			'Sllm Blog is a modern, bilingual blog website developed using Next.js and Redux. It features a user-friendly and fully responsive interface, with dynamic SEO optimization tailored for each blog post. The platform supports both Arabic and English languages, allowing users to switch the language of each blog individually. In addition, it includes essential functionalities such as advanced search and seamless pagination to enhance the browsing experience.',
+	},
 	{
 		id: 116,
 		title: 'SEF Academy Website  (Full Stack Trining)',
