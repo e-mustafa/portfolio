@@ -22,14 +22,14 @@ import {
 	FaLaptopCode,
 	FaNode,
 	FaReact,
-	FaRegHospital,
+	// FaRegHospital,
 	FaSass,
 	FaToolbox,
 } from 'react-icons/fa';
 import { DiJavascript1 } from 'react-icons/di';
 import {
 	SiAlpinedotjs,
-	SiAutodesk,
+	// SiAutodesk,
 	SiExpress,
 	SiMaterialui,
 	SiMongodb,
@@ -81,7 +81,7 @@ export const timelineData = [
 		date: 'Jul/2024 - Present',
 		title: 'Front-end web Developer',
 		organization: 'Sllm for E-Commerce',
-		icon: <FaLaptopCode />,
+		icon: <FaToolbox />,
 	},
 	{
 		date: 'Dec/2022 - Sep/2023',
