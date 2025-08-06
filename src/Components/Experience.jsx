@@ -15,10 +15,11 @@ export default function Experience() {
 
 			<Timeline position='right' color='text.white' sx={{ px: 0, overflow: 'hidden' }}>
 				<Grid container alignItems='end'>
-					<Grid item xs={12} md={6}>
+					<Grid item xs={12} md={12}>
 						{timelineData.map(
 							(item, index) =>
-								index < timelineData?.length / 2 && (
+							// index < timelineData?.length / 2 && 
+							(
 									<TimelineItem
 										key={index}
 										sx={{
@@ -41,14 +42,14 @@ export default function Experience() {
 												{item.date}
 											</Typography>
 											<Typography variant='h6'>{item.title}</Typography>
-											<Typography variant='h6'>{item.organization}</Typography>
+											<Typography variant='h6' fontWeight={600}>{item.organization}</Typography>
 										</TimelineContent>
 									</TimelineItem>
 								)
 						)}
 					</Grid>
 
-					<Grid item xs={12} md={6}>
+					{/* <Grid item xs={12} md={12}>
 						{timelineData.map(
 							(item, index) =>
 								index >= timelineData?.length / 2 && (
@@ -79,7 +80,7 @@ export default function Experience() {
 									</TimelineItem>
 								)
 						)}
-					</Grid>
+					</Grid> */}
 				</Grid>
 			</Timeline>
 		</Fragment>

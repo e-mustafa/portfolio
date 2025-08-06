@@ -77,12 +77,12 @@ export const skills2 = [
 ];
 
 export const timelineData = [
-	// {
-	// 	date: 'Jul/2024 - Present',
-	// 	title: 'Front-end web Developer',
-	// 	organization: 'Sllm for E-Commerce',
-	// 	icon: <FaLaptopCode />,
-	// },
+	{
+		date: 'Jul/2024 - Present',
+		title: 'Front-end web Developer',
+		organization: 'Sllm for E-Commerce',
+		icon: <FaLaptopCode />,
+	},
 	{
 		date: 'Dec/2022 - Sep/2023',
 		title: 'Front/Back-end Developer Diploma',
@@ -95,30 +95,30 @@ export const timelineData = [
 		organization: 'Pepo.Teck',
 		icon: <FaLaptopCode />,
 	},
-	{
-		date: 'Nov/2018 - Present',
-		title: '3D VISUALIZER',
-		organization: 'Freelancer',
-		icon: <SiAutodesk />,
-	},
-	{
-		date: 'Jul/2016 - Sep/2018',
-		title: 'Biomedical Engineer',
-		organization: 'Smama Group, Jeddah',
-		icon: <FaToolbox />,
-	},
-	{
-		date: 'Feb/2014 - Jul/2016',
-		title: 'Biomedical Engineer',
-		organization: 'Saad Ahmed Saad EST, Jeddah',
-		icon: <FaToolbox />,
-	},
-	{
-		date: 'Mar/2013 - Dec/2013',
-		title: 'Biomedical Engineer Trainee and Volunteer',
-		organization: 'International Medical Center, Jeddah',
-		icon: <FaRegHospital />,
-	},
+	// {
+	// 	date: 'Nov/2018 - Present',
+	// 	title: '3D VISUALIZER',
+	// 	organization: 'Freelancer',
+	// 	icon: <SiAutodesk />,
+	// },
+	// {
+	// 	date: 'Jul/2016 - Sep/2018',
+	// 	title: 'Biomedical Engineer',
+	// 	organization: 'Smama Group, Jeddah',
+	// 	icon: <FaToolbox />,
+	// },
+	// {
+	// 	date: 'Feb/2014 - Jul/2016',
+	// 	title: 'Biomedical Engineer',
+	// 	organization: 'Saad Ahmed Saad EST, Jeddah',
+	// 	icon: <FaToolbox />,
+	// },
+	// {
+	// 	date: 'Mar/2013 - Dec/2013',
+	// 	title: 'Biomedical Engineer Trainee and Volunteer',
+	// 	organization: 'International Medical Center, Jeddah',
+	// 	icon: <FaRegHospital />,
+	// },
 	{
 		date: '2007 - 2012',
 		title: 'Medical Equipment Engineering',
