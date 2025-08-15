@@ -1,8 +1,7 @@
-import React from 'react';
 import { Avatar, Card, CardMedia, Grid, Typography } from '@mui/material';
 import { Box, Container } from '@mui/system';
 import { useNavigate } from 'react-router-dom';
-import { startLink } from './MyProjectsData';
+import { myHomeData, mySocialContact, startLink } from './MyProjectsData';
 
 import myImage from '../Images/my image 01.png';
 import myImage2 from '../Images/my image 02.png';
@@ -10,6 +9,7 @@ import myImage3 from '../Images/my imagess 01.png';
 import '../Styles/Home.css';
 
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import SocialContact from './SocialContact';
 import useProgressiveImg from './useProgressiveImg';
 
 export const Home = () => {
@@ -85,8 +85,9 @@ export const Home = () => {
 									fontWeight='bold'
 									color='text.disabled'
 									textAlign='center'
+									textTransform={'uppercase'}
 								>
-									MUSTAFA Abutabl
+									{myHomeData?.name}
 								</Typography>
 
 								<Typography
@@ -96,7 +97,7 @@ export const Home = () => {
 									textAlign='center'
 									my={1}
 								>
-									Full-stack developer
+									{myHomeData?.job}
 								</Typography>
 
 								<Typography
@@ -106,9 +107,13 @@ export const Home = () => {
 									px={{ xs: 2, md: 10 }}
 									className='animate__animated animate__fadeIn'
 								>
-									I'm an Egyptian based full-stack developer focused on crafting clean & user‑friendly experiences,
-									I am passionate about building excellent software that improves the live of human beings.
+									{myHomeData?.summery}
 								</Typography>
+
+								{/* social icons */}
+								<Box display='flex' justifyContent='center' mt={3}>
+									<SocialContact data={mySocialContact} />
+								</Box>
 
 								<Box
 									className='project-btn'

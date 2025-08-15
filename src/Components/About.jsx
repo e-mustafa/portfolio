@@ -5,7 +5,7 @@ import Grid from '@mui/material/Unstable_Grid2/Grid2';
 import myImage2 from '../Images/my image 02.png';
 import myImage3 from '../Images/my imagess 01.png';
 
-import { myPersonalInfo, skills, skills2 } from './MyProjectsData';
+import { myPersonalInfo, resumeLink, skills, skills2 } from './MyProjectsData';
 // import {LinearWithLabel} from './ProgressWithLabel'
 import Experience from './Experience';
 import { FiDownload } from 'react-icons/fi';
@@ -135,12 +135,12 @@ export default function About() {
 					</Box>
 
 					<Box display='flex' justifyContent={{ xs: 'center', lg: 'left' }}>
-						<Link href='./files/MUSTAFA-Abutabl-resume.pdf' target='_blank' download color='#ffffff' underline='none'>
+						<Link href={resumeLink} target='_blank' download color='#ffffff' underline='none'>
 							<Box className='project-btn' color='text.primary' mt={5}>
 								<Box className='project-btn-icon'>
 									<FiDownload />{' '}
 								</Box>
-								<Box className='project-btn-text'> Download CV </Box>
+								<Box className='project-btn-text'> My Resume </Box>
 							</Box>
 						</Link>
 					</Box>

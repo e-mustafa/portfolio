@@ -1,32 +1,25 @@
-import templateCarouselImg from '../Images/Projects/template-w-carouse.jpg';
-import watchProductsImg from '../Images/Projects/watch-products.jpg';
-import basicCalculatorImg from '../Images/Projects/basic-calculator.png';
-import currencyExchangeImg from '../Images/Projects/currency-exchange.jpg';
-import caraShopingImg from '../Images/Projects/cara-shoping.jpg';
-import lusionShoppingImg from '../Images/Projects/react-lusion.jpg';
-import simpleMoviesImg from '../Images/Projects/Simple Movies-full.jpg';
-import simpleMoviesReduxImg from '../Images/Projects/simple-movies-redux-full.jpg';
-import Tamplate101DesignImg from '../Images/Projects/Tamplate-101-full.jpg';
-import Tamplate102RocherImg from '../Images/Projects/Tamplate-102-Rocher-Furniture-full.jpg';
-import coffeeKingImg from '../Images/Projects/Tamplate-103-CoffeeKing-Bootstrap-full.jpg';
-import devitaWatchsImg from '../Images/Projects/devita-watchs-full.jpg';
-import academyFrontendImg from '../Images/Projects/SEF-Academy-Trining-01.png';
-import academyFullStackImg from '../Images/Projects/SEF-Academy-Trining-02.png';
-import sllmBlogImg from '../Images/Projects/SLLM Blogs-sllm-blog-redux.vercel.app.webp';
+import { DiJavascript1 } from 'react-icons/di';
 import {
 	FaBootstrap,
 	FaCss3Alt,
+	FaEnvelopeOpen,
+	FaFacebookMessenger,
 	FaGitAlt,
 	FaGithub,
 	FaHtml5,
 	FaLaptopCode,
+	FaLinkedinIn,
+	FaMap,
 	FaNode,
+	FaPhoneAlt,
 	FaReact,
 	// FaRegHospital,
 	FaSass,
+	FaTelegram,
 	FaToolbox,
+	FaWhatsapp,
 } from 'react-icons/fa';
-import { DiJavascript1 } from 'react-icons/di';
+import { GiOpenBook } from 'react-icons/gi';
 import {
 	SiAlpinedotjs,
 	// SiAutodesk,
@@ -37,10 +30,34 @@ import {
 	SiRedux,
 	SiTailwindcss,
 } from 'react-icons/si';
-import { GiOpenBook } from 'react-icons/gi';
+import basicCalculatorImg from '../Images/Projects/basic-calculator.png';
+import caraShopingImg from '../Images/Projects/cara-shoping.jpg';
+import currencyExchangeImg from '../Images/Projects/currency-exchange.jpg';
+import devitaWatchsImg from '../Images/Projects/devita-watchs-full.jpg';
+import lusionShoppingImg from '../Images/Projects/react-lusion.jpg';
+import academyFrontendImg from '../Images/Projects/SEF-Academy-Trining-01.png';
+import academyFullStackImg from '../Images/Projects/SEF-Academy-Trining-02.png';
+import simpleMoviesImg from '../Images/Projects/Simple Movies-full.jpg';
+import simpleMoviesReduxImg from '../Images/Projects/simple-movies-redux-full.jpg';
+import sllmBlogImg from '../Images/Projects/SLLM Blogs-sllm-blog-redux.vercel.app.webp';
+import Tamplate101DesignImg from '../Images/Projects/Tamplate-101-full.jpg';
+import Tamplate102RocherImg from '../Images/Projects/Tamplate-102-Rocher-Furniture-full.jpg';
+import coffeeKingImg from '../Images/Projects/Tamplate-103-CoffeeKing-Bootstrap-full.jpg';
+import templateCarouselImg from '../Images/Projects/template-w-carouse.jpg';
+import watchProductsImg from '../Images/Projects/watch-products.jpg';
 // import { color } from "framer-motion";
 
 export const startLink = '';
+export const resumeLink = 'https://drive.google.com/file/d/1D0Fy5Pe73G_mcTDDA4iYf4_onrYOwhwU/view?usp=drive_link';
+// export const resumeLink = './files/MUSTAFA_Abutabl_resume.pdf';
+
+export const myHomeData = {
+	name: 'Mustafa Abutabl',
+	job: 'Full Stack Web Developer',
+	summery:
+		'I’m an Egyptian Frontend Developer specializing in building responsive, mobile-first, and high-performance web applications using React, Next.js, Tailwind CSS, and JavaScript. Passionate about crafting clean, user-friendly interfaces, translating complex UI/UX designs into pixel-perfect solutions, and integrating APIs for seamless functionality. Experienced in performance optimization, version control (Git/GitHub), and delivering scalable, maintainable applications within Agile teams.',
+};
+
 
 export const myPersonalInfo = [
 	{ id: 201, title: 'First Name', info: 'Mustafa' },
@@ -49,31 +66,52 @@ export const myPersonalInfo = [
 	{ id: 204, title: 'Nationality', info: 'Egyption' },
 	{ id: 205, title: 'Military Service', info: ' Finshed' },
 	{ id: 206, title: 'Languages', info: 'Arabic, English' },
-	{ id: 208, title: 'phone', info: '+20 111 970 6667' },
+	{ id: 208, title: 'phone', info: '+20 111 970 6667', icon: 'phone', iconLink: 'tel:+201119706667' },
 	{ id: 207, title: 'email', info: 'eng.mustafa@hotmail.com' },
 	{ id: 209, title: 'Freelance', info: 'Available', color: '#01ef92' },
 ];
 
+export const myContactInfo = [
+	{ id: 301, title: 'Address', icon: FaMap, info: 'Cairo, Egypt', link: '' },
+	{
+		id: 302,
+		title: 'Mail Me',
+		icon: FaEnvelopeOpen,
+		info: 'eng.mustafa@hotmail.com',
+		link: 'mailto:eng.mustafa@hotmail.com',
+	},
+	{ id: 303, title: 'Call Me', icon: FaPhoneAlt, info: '+20 111 970 6667', link: 'tel:+201119706667' },
+];
+
+export const mySocialContact = [
+	{ id: 311, title: 'Whatsapp', icon: FaWhatsapp, link: 'https://wa.me/201119706667' },
+	{ id: 312, title: 'Github', icon: FaGithub, link: 'https://github.com/e-mustafa' },
+	{ id: 313, title: 'Linkedin', icon: FaLinkedinIn, link: 'https://www.linkedin.com/in/e-mustafa' },
+	// { id: 314, title: 'Facebook', icon: FaFacebookF, link: 'https://web.facebook.com/my.6000' },
+	{ id: 315, title: 'messenger', icon: FaFacebookMessenger, link: 'https://m.me/my.6000' },
+	{ id: 316, title: 'Telegram', icon: FaTelegram, link: 'https://t.me/eng_noo' },
+];
+
 export const skills = [
-	{ id: 201, title: 'HTML', icon: <FaHtml5 />, color: '#e56229' },
-	{ id: 202, title: 'CSS', icon: <FaCss3Alt />, color: '#007FFF' },
-	{ id: 203, title: 'JavaScript', icon: <DiJavascript1 />, color: '#EAD41C' },
-	{ id: 204, title: 'React', icon: <FaReact />, color: '#00CEF2' },
-	{ id: 205, title: 'Next', icon: <SiNextdotjs /> },
-	{ id: 206, title: 'Alpine.js', icon: <SiAlpinedotjs />, color: '#77C1D2' },
-	{ id: 207, title: 'Express', icon: <SiExpress /> },
-	{ id: 208, title: 'MongoDB', icon: <SiMongodb />, color: '#4E9E42' },
-	{ id: 209, title: 'Node.js', icon: <FaNode />, color: '#5CA74B' },
+	{ id: 401, title: 'HTML', icon: <FaHtml5 />, color: '#e56229' },
+	{ id: 402, title: 'CSS', icon: <FaCss3Alt />, color: '#007FFF' },
+	{ id: 403, title: 'JavaScript', icon: <DiJavascript1 />, color: '#EAD41C' },
+	{ id: 404, title: 'React', icon: <FaReact />, color: '#00CEF2' },
+	{ id: 405, title: 'Next', icon: <SiNextdotjs /> },
+	{ id: 406, title: 'Alpine.js', icon: <SiAlpinedotjs />, color: '#77C1D2' },
+	{ id: 407, title: 'Express', icon: <SiExpress /> },
+	{ id: 408, title: 'MongoDB', icon: <SiMongodb />, color: '#4E9E42' },
+	{ id: 409, title: 'Node.js', icon: <FaNode />, color: '#5CA74B' },
 ];
 
 export const skills2 = [
-	{ id: 301, title: 'Bootstrap', icon: <FaBootstrap />, color: '#733DBE' },
-	{ id: 302, title: 'Material UI', icon: <SiMaterialui />, color: '#007FFF' },
-	{ id: 303, title: 'Tailwindcss', icon: <SiTailwindcss />, color: '#00bcff' },
-	{ id: 304, title: 'Github', icon: <FaGithub /> },
-	{ id: 305, title: 'Git', icon: <FaGitAlt />, color: '#DE4C36' },
-	{ id: 306, title: 'Redux', icon: <SiRedux />, color: '#764ABC' },
-	{ id: 307, title: 'SASS', icon: <FaSass />, color: '#c76494' },
+	{ id: 501, title: 'Bootstrap', icon: <FaBootstrap />, color: '#733DBE' },
+	{ id: 502, title: 'Material UI', icon: <SiMaterialui />, color: '#007FFF' },
+	{ id: 503, title: 'Tailwindcss', icon: <SiTailwindcss />, color: '#00bcff' },
+	{ id: 504, title: 'Github', icon: <FaGithub /> },
+	{ id: 505, title: 'Git', icon: <FaGitAlt />, color: '#DE4C36' },
+	{ id: 506, title: 'Redux', icon: <SiRedux />, color: '#764ABC' },
+	{ id: 507, title: 'SASS', icon: <FaSass />, color: '#c76494' },
 ];
 
 export const timelineData = [

@@ -1,11 +1,10 @@
-import React from 'react';
 import { Container, Grid, Link, Typography } from '@mui/material';
 import { Box, Stack } from '@mui/system';
 
-import { FaMap, FaEnvelopeOpen, FaPhoneAlt } from 'react-icons/fa';
-import { FaFacebookF, FaLinkedinIn, FaWhatsapp, FaTelegramPlane, FaGithub } from 'react-icons/fa';
 import '../Styles/Contact.css';
 import ContactForm from './ContactForm';
+import { myContactInfo, mySocialContact } from './MyProjectsData';
+import SocialContact from './SocialContact';
 
 const Contact = () => {
 	return (
@@ -30,7 +29,7 @@ const Contact = () => {
 
 			<Box>
 				<Typography fontSize={{ xs: '25px', lg: '25px' }} textAlign={{ xs: 'center', lg: 'left' }} mb={3}>
-					DON'T BE SHY !
+					Get in touch!
 				</Typography>
 			</Box>
 
@@ -42,91 +41,34 @@ const Contact = () => {
 							opportunities to be part of your visions.
 						</Typography>
 
-						<Stack display='flex' flexDirection='row' alignItems='center' gap={2} mb={4}>
-							<Stack fontSize={40} color='text.disabled'>
-								<FaMap />
-							</Stack>
+						{myContactInfo?.length &&
+							myContactInfo.map((item) => (
+								<Stack key={item.id} display='flex' flexDirection='row' alignItems='center' gap={2} mb={4}>
+									<Stack fontSize={30} color='text.disabled'>
+										<item.icon />
+									</Stack>
 
-							<Stack fontSize={40} textAlign='left'>
-								<Typography> Address point </Typography>
-								<Typography> Cairo - Egypt </Typography>
-							</Stack>
-						</Stack>
+									<Stack fontSize={30} textAlign='left'>
+										<Typography capitalize> {item.title} </Typography>
 
-						<Stack display='flex' flexDirection='row' alignItems='center' gap={2} mb={4}>
-							<Stack fontSize={30} color='text.disabled'>
-								<FaEnvelopeOpen />
-							</Stack>
+										{item.link ? (
+											<Link
+												href={item.link}
+												underline='hover'
+												sx={{ color: 'text.praimary', textTransform: 'lowercase' }}
+												fontSize={15}
+											>
+												{item.info}
+											</Link>
+										) : (
+											<Typography fontSize={15}>{item.info}</Typography>
+										)}
+									</Stack>
+								</Stack>
+							))}
 
-							<Stack fontSize={30} textAlign='left'>
-								<Typography> Mail Me </Typography>
-
-								<Link
-									href='mailto:eng.mustafax@gmail.com'
-									underline='hover'
-									sx={{ color: 'text.praimary', textTransform: 'lowercase' }}
-									fontSize={15}
-								>
-									Eng.mustafa@hotmail.com
-								</Link>
-							</Stack>
-						</Stack>
-
-						<Stack display='flex' flexDirection='row' alignItems='center' gap={2} mb={4}>
-							<Stack fontSize={40} color='text.disabled'>
-								<FaPhoneAlt />
-							</Stack>
-
-							<Stack textAlign='left'>
-								<Typography> Call Me </Typography>
-								<Link href='tel:+201119706667' underline='hover' sx={{ color: 'text.praimary' }}>
-									+20 111 970 6667
-								</Link>
-								<Link href='tel:+201091278812' underline='hover' sx={{ color: 'text.praimary' }}>
-									+20 109 127 8812
-								</Link>
-							</Stack>
-						</Stack>
-
-						<Stack
-							display='flex'
-							flexDirection='row'
-							alignItems='center'
-							gap={2}
-							mb={3}
-							justifyContent={{ xs: 'center', lg: 'left' }}
-							className='animate__animated animate__zoomIn'
-						>
-							<Link href='https://web.facebook.com/my.6000' target='_blank' rel='noopener'>
-								<Box className='social-icons' bgcolor='action.disabledBackground'>
-									<FaFacebookF />
-								</Box>
-							</Link>
-
-							<Link href='https://www.linkedin.com/in/e-mustafa' target='_blank' rel='noopener'>
-								<Box className='social-icons' bgcolor='action.disabledBackground'>
-									<FaLinkedinIn />
-								</Box>
-							</Link>
-
-							<Link href='https://wa.me/+201119706667' target='_blank' rel='noopener'>
-								<Box className='social-icons' bgcolor='action.disabledBackground'>
-									<FaWhatsapp />
-								</Box>
-							</Link>
-
-							<Link href='https://t.me/eng_noo' target='_blank' rel='noopener'>
-								<Box className='social-icons' bgcolor='action.disabledBackground'>
-									<FaTelegramPlane />
-								</Box>
-							</Link>
-
-							<Link href='https://github.com/e-mustafa' target='_blank' rel='noopener'>
-								<Box className='social-icons' bgcolor='action.disabledBackground'>
-									<FaGithub />
-								</Box>
-							</Link>
-						</Stack>
+						{/* social icons */}
+						<SocialContact data={mySocialContact} />
 					</Stack>
 				</Grid>
 
