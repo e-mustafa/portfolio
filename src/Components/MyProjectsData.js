@@ -29,6 +29,7 @@ import {
 	SiNextdotjs,
 	SiRedux,
 	SiTailwindcss,
+	SiTypescript,
 } from 'react-icons/si';
 import basicCalculatorImg from '../Images/Projects/basic-calculator.png';
 import caraShopingImg from '../Images/Projects/cara-shoping.jpg';
@@ -57,7 +58,6 @@ export const myHomeData = {
 	summery:
 		'I’m an Egyptian Frontend Developer specializing in building responsive, mobile-first, and high-performance web applications using React, Next.js, Tailwind CSS, and JavaScript. Passionate about crafting clean, user-friendly interfaces, translating complex UI/UX designs into pixel-perfect solutions, and integrating APIs for seamless functionality. Experienced in performance optimization, version control (Git/GitHub), and delivering scalable, maintainable applications within Agile teams.',
 };
-
 
 export const myPersonalInfo = [
 	{ id: 201, title: 'First Name', info: 'Mustafa' },
@@ -96,6 +96,7 @@ export const skills = [
 	{ id: 401, title: 'HTML', icon: <FaHtml5 />, color: '#e56229' },
 	{ id: 402, title: 'CSS', icon: <FaCss3Alt />, color: '#007FFF' },
 	{ id: 403, title: 'JavaScript', icon: <DiJavascript1 />, color: '#EAD41C' },
+	{ id: 410, title: 'TypeScript', icon: <SiTypescript />, color: '#3178c6' },
 	{ id: 404, title: 'React', icon: <FaReact />, color: '#00CEF2' },
 	{ id: 405, title: 'Next', icon: <SiNextdotjs /> },
 	{ id: 406, title: 'Alpine.js', icon: <SiAlpinedotjs />, color: '#77C1D2' },
