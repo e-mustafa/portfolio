@@ -15,6 +15,7 @@ import {
 	FaReact,
 	// FaRegHospital,
 	FaSass,
+	FaSlack,
 	FaTelegram,
 	FaToolbox,
 	FaWhatsapp,
@@ -24,18 +25,26 @@ import {
 	SiAlpinedotjs,
 	// SiAutodesk,
 	SiExpress,
-	SiMaterialui,
+	SiJira,
 	SiMongodb,
+	SiMui,
 	SiNextdotjs,
+	SiReacthookform,
+	SiRedis,
 	SiRedux,
+	SiShadcnui,
 	SiTailwindcss,
+	SiTanstack,
 	SiTypescript,
+	SiZod,
 } from 'react-icons/si';
 import basicCalculatorImg from '../Images/Projects/basic-calculator.png';
 import caraShopingImg from '../Images/Projects/cara-shoping.jpg';
 import currencyExchangeImg from '../Images/Projects/currency-exchange.jpg';
 import devitaWatchsImg from '../Images/Projects/devita-watchs-full.jpg';
+import ecommerceDashboardImg from '../Images/Projects/falcon-ecommerce-dashboard.webp';
 import lusionShoppingImg from '../Images/Projects/react-lusion.jpg';
+import sarahaAppImg from '../Images/Projects/saraha-app.webp';
 import academyFrontendImg from '../Images/Projects/SEF-Academy-Trining-01.png';
 import academyFullStackImg from '../Images/Projects/SEF-Academy-Trining-02.png';
 import simpleMoviesImg from '../Images/Projects/Simple Movies-full.jpg';
@@ -50,6 +59,8 @@ import watchProductsImg from '../Images/Projects/watch-products.jpg';
 
 export const startLink = '';
 export const resumeLink = 'https://drive.google.com/file/d/1D0Fy5Pe73G_mcTDDA4iYf4_onrYOwhwU/view?usp=drive_link';
+// direct download
+// export const resumeLink = 'https://drive.google.com/uc?export=download&id=1D0Fy5Pe73G_mcTDDA4iYf4_onrYOwhwU';
 // export const resumeLink = './files/MUSTAFA_Abutabl_resume.pdf';
 
 export const myHomeData = {
@@ -106,13 +117,20 @@ export const skills = [
 ];
 
 export const skills2 = [
-	{ id: 501, title: 'Bootstrap', icon: <FaBootstrap />, color: '#733DBE' },
-	{ id: 502, title: 'Material UI', icon: <SiMaterialui />, color: '#007FFF' },
-	{ id: 503, title: 'Tailwindcss', icon: <SiTailwindcss />, color: '#00bcff' },
-	{ id: 504, title: 'Github', icon: <FaGithub /> },
-	{ id: 505, title: 'Git', icon: <FaGitAlt />, color: '#DE4C36' },
-	{ id: 506, title: 'Redux', icon: <SiRedux />, color: '#764ABC' },
-	{ id: 507, title: 'SASS', icon: <FaSass />, color: '#c76494' },
+	{ id: 301, title: 'Bootstrap', icon: <FaBootstrap />, color: '#733DBE' },
+	{ id: 302, title: 'Material UI', icon: <SiMui />, color: '#007FFF' },
+	{ id: 303, title: 'Tailwindcss', icon: <SiTailwindcss />, color: '#00bcff' },
+	{ id: 304, title: 'Github', icon: <FaGithub /> },
+	{ id: 305, title: 'Git', icon: <FaGitAlt />, color: '#DE4C36' },
+	{ id: 306, title: 'Redux', icon: <SiRedux />, color: '#764ABC' },
+	{ id: 307, title: 'SASS', icon: <FaSass />, color: '#c76494' },
+	{ id: 308, title: 'Shadcn ui', icon: <SiShadcnui />, color: '#666666' },
+	{ id: 309, title: 'Tanstack Query', icon: <SiTanstack />, color: '#FFB96D' },
+	{ id: 310, title: 'Redis', icon: <SiRedis />, color: '#FF4438' },
+	{ id: 311, title: 'Zod', icon: <SiZod />, color: '#408AFF' },
+	{ id: 312, title: 'Redis', icon: <SiReacthookform />, color: '#EC5990' },
+	{ id: 313, title: 'Jira', icon: <SiJira />, color: '#1868DB ' },
+	{ id: 314, title: 'Slack', icon: <FaSlack />, color: '#36C5F0' },
 ];
 
 export const timelineData = [
@@ -167,6 +185,28 @@ export const timelineData = [
 ];
 
 export const myProjects = [
+	{
+		id: 119,
+		title: 'Sarahah App - Full-Stack Anonymous Messaging ',
+		img: sarahaAppImg,
+		link: 'https://saraha-app-front.vercel.app/',
+		githubLink: 'https://github.com/e-mustafa/saraha-app-frontend',
+		backendLink: 'https://saraha-app-back.vercel.app/',
+		backendGithub: 'https://github.com/e-mustafa/saraha-app',
+		Language: ['HTML', 'CSS', 'tailwindcss', 'TypeScript', 'React', 'Node.js'],
+		description:
+			'Sarahah App is a modern full-stack anonymous messaging platform built with Next.js, Express.js, and MongoDB. It offers a secure and responsive user experience with JWT authentication, Google OAuth, automatic token refresh, and encrypted private messaging. Users can send anonymous or identified messages, upload images and audio recordings, organize messages into different categories, and publish selected messages publicly. The application supports Arabic and English, RTL/LTR layouts, dark mode, and a modular architecture designed for scalability and maintainability.',
+	},
+	{
+		id: 118,
+		title: 'E-commerce Dashboard – In Progress',
+		img: ecommerceDashboardImg,
+		// link: 'https://sllm-blog-redux.vercel.app/',
+		githubLink: 'https://github.com/e-mustafa/nextjs15-dashboard-start',
+		Language: ['HTML', 'CSS', 'tailwindcss', 'TypeScript', 'React', 'Node.js'],
+		description:
+			'E-commerce Dashboard is a modern administration dashboard built with Next.js and TypeScript. It provides a scalable and responsive interface for managing products, users, and application data through a modular architecture and reusable UI components. The project includes secure authentication, role-based access control, dynamic forms, advanced data tables, image management, internationalization with RTL/LTR support, dark mode, and efficient state management for a smooth user experience.',
+	},
 	// {
 	// 	id: 117,
 	// 	title: "Government Services Website",
@@ -177,6 +217,7 @@ export const myProjects = [
 	// 	description:
 	// 		"Developed a government services website to facilitate the completion of official paperwork and procedures. As part of the Backend team, I built almost the entire project except for the users section. I developed APIs and managed databases for Blogs, Chat, Services, and Papers. Additionally, I contributed to the Frontend by completing the Papers section due to time constraints faced by the Frontend team.", // Project description
 	// },
+
 	{
 		id: 117,
 		title: 'Sllm Blog Website',

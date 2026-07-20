@@ -1,4 +1,3 @@
-import React from 'react';
 import { Avatar, Box, Container, Divider, Link, Stack, Typography } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2/Grid2';
 
@@ -7,14 +6,14 @@ import myImage3 from '../Images/my imagess 01.png';
 
 import { myPersonalInfo, resumeLink, skills, skills2 } from './MyProjectsData';
 // import {LinearWithLabel} from './ProgressWithLabel'
-import Experience from './Experience';
 import { FiDownload } from 'react-icons/fi';
+import Experience from './Experience';
 
-import '../Styles/index.css';
 import 'animate.css';
+import '../Styles/index.css';
 
-import useProgressiveImg from './useProgressiveImg';
 import { motion } from 'framer-motion';
+import useProgressiveImg from './useProgressiveImg';
 
 export default function About() {
 	const [src, { blur }] = useProgressiveImg(myImage3, myImage2);
@@ -216,7 +215,7 @@ export default function About() {
 
 				<Box display='flex' flexDirection='row' gap={3} flexWrap='wrap' textAlign='center'>
 					{skills2?.map((skill, i) => (
-						<Box key={skill?.id} fontSize={60} color={skill?.color || 'primary'} flex={{ xs: '1 1 auto' }}>
+						<Box key={skill?.id} fontSize={60} color={skill?.color || 'primary'} flex={{ xs: '1 1 auto', sm: '0 1 auto' }}>
 							<Box
 								sx={{
 									'&:hover': {

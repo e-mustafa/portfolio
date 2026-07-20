@@ -1,4 +1,3 @@
-import React from 'react';
 import {
 	Button,
 	Card,
@@ -10,13 +9,14 @@ import {
 	IconButton,
 	Link,
 	Stack,
+	Typography,
+	Zoom,
 } from '@mui/material';
-import { Zoom, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 
 import CloseIcon from '@mui/icons-material/Close';
-import VisibilityIcon from '@mui/icons-material/Visibility';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import VisibilityIcon from '@mui/icons-material/Visibility';
 
 export default function ProjectDetails({ open, setOpen, EProjectDetails }) {
 	const handleClose = () => {
@@ -35,8 +35,7 @@ export default function ProjectDetails({ open, setOpen, EProjectDetails }) {
 		>
 			<Box position='absolute' right={10} top={10}>
 				<IconButton onClick={handleClose}>
-					{' '}
-					<CloseIcon />{' '}
+					<CloseIcon />
 				</IconButton>
 			</Box>
 
@@ -46,8 +45,7 @@ export default function ProjectDetails({ open, setOpen, EProjectDetails }) {
 
 			<DialogContent>
 				<Typography variant='body1' color='text.secondary'>
-					{' '}
-					Language and Framework:{' '}
+					Language and Framework:
 				</Typography>
 
 				<Typography variant='h6'>
@@ -66,26 +64,54 @@ export default function ProjectDetails({ open, setOpen, EProjectDetails }) {
 					</CardActionArea>
 				</Card>
 
-				<Typography variant='body1' color='text.secondary'>
-					{' '}
-					Description:{' '}
+				<Typography variant='body1' textAlign='justify' color='text.secondary'>
+					Description:
 				</Typography>
 				<Typography variant='body1'> {EProjectDetails.description} </Typography>
 
 				<Stack direction='row' justifyContent='space-around' marginTop={2} gap={2} flexWrap='wrap'>
-					<Link underline='none' href={EProjectDetails.link} target='_blank'>
-						<Button size='lg' variant='outlined' endIcon={<VisibilityIcon />}>
-							Live Demo{' '}
-						</Button>
-					</Link>
+					{EProjectDetails.link && (
+						<Link underline='none' href={EProjectDetails.link} target='_blank'>
+							<Button size='lg' variant='outlined' endIcon={<VisibilityIcon />}>
+								Live Demo
+							</Button>
+						</Link>
+					)}
 
-					<Link underline='none' href={EProjectDetails.githubLink} target='_blank'>
-						<Button size='lg' color='primary' variant='outlined' endIcon={<GitHubIcon />}>
-							{' '}
-							Github Link{' '}
-						</Button>
-					</Link>
+					{EProjectDetails.githubLink && (
+						<Link underline='none' href={EProjectDetails.githubLink} target='_blank'>
+							<Button size='lg' color='primary' variant='outlined' endIcon={<GitHubIcon />}>
+								Github Link
+							</Button>
+						</Link>
+					)}
 				</Stack>
+
+				{EProjectDetails.backendLink && (
+					<>
+						<Typography variant='body1' marginTop={2} color='text.secondary'>
+							Backend Links:
+						</Typography>
+						
+						<Stack direction='row' justifyContent='space-around' gap={2} flexWrap='wrap'>
+							{EProjectDetails.backendLink && (
+								<Link underline='none' href={EProjectDetails.backendLink} target='_blank'>
+									<Button size='lg' variant='outlined' endIcon={<VisibilityIcon />}>
+										Live Demo
+									</Button>
+								</Link>
+							)}
+
+							{EProjectDetails.backendLink && (
+								<Link underline='none' href={EProjectDetails.backendGithub} target='_blank'>
+									<Button size='lg' color='primary' variant='outlined' endIcon={<GitHubIcon />}>
+										Github Link
+									</Button>
+								</Link>
+							)}
+						</Stack>
+					</>
+				)}
 			</DialogContent>
 		</Dialog>
 	);
